@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voucher Details</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        #loadingIndicator {
+            color: blue;
+            margin-bottom: 10px;
+        }
+        #errorMessage {
+            color: red;
+            margin-bottom: 10px;
+        }
+        #totalRowsIndicator {
+            color: green;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Voucher Details</h1>
+    
+    <div id="loadingIndicator">Loading data...</div>
+    <div id="errorMessage"></div>
+    <div id="totalRowsIndicator">Rows Loaded: 0</div>
+    
+    <table>
+        <thead>
+            <tr>
+                {% for column in columns %}
+                <th>{{ column }}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody id="dataBody">
+            <!-- Rows will be dynamically loaded here -->
+        </tbody>
+    </table>
+
+    <h2>Initial Load Time: {{ end_time }} seconds</h2>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tbody = document.getElementById('dataBody');
+            const loadingIndicator = document.getElementById('loadingIndicator');
+            const errorMessage = document.getElementById('errorMessage');
+            const totalRowsIndicator = document.getElementById('totalRowsIndicator');
+
+            // Track loading state
+            let isLoading = false;
+            let isCompleted = false;
+
+            function loadMoreData() {
+                // Prevent multiple simultaneous loads
+                if (isLoading || isCompleted) return;
+
+                isLoading = true;
+                loadingIndicator.textContent = 'Loading more data...';
+                loadingIndicator.style.display = 'block';
+
+                fetch('/load_data')
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        }
+
+                        const reader = response.body.getReader();
+                        const decoder = new TextDecoder();
+
+                        function processStream({ done, value }) {
+                            if (done) {
+                                isLoading = false;
+                                isCompleted = true;
+                                loadingIndicator.style.display = 'none';
+                                return;
+                            }
+
+                            const chunk = decoder.decode(value);
+                            try {
+                                // Parse the chunk 
+                                const chunkData = JSON.parse(chunk);
+
+                                // Check for error
+                                if (chunkData.error) {
+                                    throw new Error(chunkData.error);
+                                }
+
+                                // Update total rows
+                                if (chunkData.total_processed) {
+                                    totalRowsIndicator.textContent = `Rows Loaded: ${chunkData.total_processed}`;
+                                }
+
+                                // Add rows to the table
+                                chunkData.rows.forEach(rowData => {
+                                    const tr = document.createElement('tr');
+                                    rowData.forEach(cellValue => {
+                                        const td = document.createElement('td');
+                                        td.textContent = cellValue !== null ? cellValue : '';
+                                        tr.appendChild(td);
+                                    });
+                                    tbody.appendChild(tr);
+                                });
+
+                                isLoading = false;
+                                loadingIndicator.style.display = 'none';
+                            } catch (error) {
+                                console.error('Error parsing chunk:', error);
+                                errorMessage.textContent = `Error: ${error.message}`;
+                                errorMessage.style.display = 'block';
+                                isLoading = false;
+                                loadingIndicator.style.display = 'none';
+                            }
+
+                            // Continue reading the stream
+                            reader.read().then(processStream);
+                        }
+
+                        // Start reading the stream
+                        reader.read().then(processStream);
+                    })
+                    .catch(error => {
+                        console.error('Fetch error:', error);
+                        errorMessage.textContent = `Error loading data: ${error.message}`;
+                        errorMessage.style.display = 'block';
+                        isLoading = false;
+                        loadingIndicator.style.display = 'none';
+                    });
+            }
+
+            // Initial data load
+            loadMoreData();
+
+            // Add scroll-based loading
+            window.addEventListener('scroll', () => {
+                if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 100) {
+                    loadMoreData();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

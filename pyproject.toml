@@ -6,4 +6,16 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "ruff>=0.8.0",
+    "pandas",
+    "fireducks",
+    "langchain",
+    "langchain-community",
+    "langchain-experimental",
+    "pymssql",
+    "SQLAlchemy",
+    "sentence-transformers",
+    "flask",
+    "python-dotenv",
+    "langchain-nvidia-ai-endpoints",
+    "ipykernel"
 ]
