@@ -8,6 +8,9 @@ import datetime
 
 app = Flask(__name__)
 
+
+gen_query = "SELECT Application_Status, Application_LoanTenure, Application_LoanDuration_Month FROM LMS_Loan_Master where Application_LoanDuration_Month > 18"
+
 @app.route('/')
 def login():
     return render_template('login.html')
@@ -17,8 +20,8 @@ def chat():
     try:
         start_time = time.time()
         
-        # Fetch columns first
-        columns_query = "SELECT * FROM LMS_Loan_Master where Application_LoanDuration_Month > 18"
+        # # Fetch columns first
+        columns_query = gen_query
         columns_df = pd.read_sql(columns_query, engine)
         columns = columns_df.columns.tolist()
         
@@ -36,7 +39,7 @@ def load_data():
         try:
             # Use chunking to retrieve data
             chunk_size = 50
-            query = "SELECT * FROM LMS_Loan_Master where Application_LoanDuration_Month > 19"
+            query = gen_query
             # Track total rows processed
             total_rows_processed = 0
             # Use chunking parameter in read_sql
