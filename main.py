@@ -2,14 +2,15 @@ from flask import Flask, request, render_template, jsonify, Response
 import logging
 from src.db_reader.sql_connection.connection import engine
 import pandas as pd
-import json
+import json,sys
 import time
+import gc
 import datetime
 
 app = Flask(__name__)
 
 
-gen_query = "SELECT Application_Status, Application_LoanTenure, Application_LoanDuration_Month FROM LMS_Loan_Master where Application_LoanDuration_Month > 18"
+gen_query = "SELECT * FROM Acc_Voucher_Details"
 
 @app.route('/')
 def login():
@@ -23,8 +24,13 @@ def chat():
         # # Fetch columns first
         columns_query = gen_query
         columns_df = pd.read_sql(columns_query, engine)
+
         columns = columns_df.columns.tolist()
         
+        # deleting the df
+        del columns_df
+        gc.collect()
+
         end_time = time.time() - start_time
         
         return render_template('home_page.html', columns=columns, end_time=end_time)
@@ -32,7 +38,6 @@ def chat():
         logging.error(f"Error in chat route: {e}")
         return f"An error occurred: {e}", 500
 
-@app.route('/load_data')
 @app.route('/load_data')
 def load_data():
     def generate():
