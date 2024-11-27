@@ -2,38 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voucher Details</title>
+    <title>Streamed Data Table</title>
     <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/css/index.js"></script>
 </head>
 <body>
-    <h1>Voucher Details</h1>
-    
-    <div id="loadingIndicator">Loading data...</div>
-    <div id="errorMessage"></div>
-    <div id="totalRowsIndicator">Rows Loaded: 0</div>
-    
-    
-    <table>
+    <table id="dataTable">
         <thead>
             <tr>
                 <th>Index</th>
-                {% for column in columns %}
-                <th>{{ column }}</th>
-                {% endfor %}
+                <!-- Dynamic column headers will be added here -->
             </tr>
         </thead>
-        <tbody id="dataBody">
-            <!-- Rows will be dynamically loaded here -->
-        </tbody>
+        <tbody id="tableBody"></tbody>
     </table>
-    <h2>Time: {{ end_time }} seconds</h2>
-    
-    <div id="pagination-buttons">
-        <button id="prev-button">Previous</button>
-        <button id="next-button">Next</button>
+
+    <div class="pagination">
+        <button id="prevButton" disabled>Previous</button>
+        <span id="pageInfo">Page 0 of 0</span>
+        <button id="nextButton" disabled>Next</button>
     </div>
 
-    <script src="/static/css/index.js"></script>
+    <div id="loadingIndicator">Loading data...</div>
+    <div id="errorMessage"></div>
+
+
 </body>
 </html>

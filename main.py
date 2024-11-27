@@ -66,6 +66,9 @@ def load_data():
                     'rows': chunk_data,
                     'total_processed': total_rows_processed
                 }) + '\n'
+                sent_till_now = total_rows_processed
+                print(f"TOTAL ROWS SENT :-: {total_rows_processed}")
+                print("="*60)
         except Exception as e:
             logging.error(f"Error in data generation: {e}")
             yield json.dumps({"error": str(e)})
