@@ -1,25 +1,31 @@
-from flask import Flask, request, render_template, jsonify, Response
+from flask import Flask, render_template, Response, request, redirect, url_for
 import logging
 from src.db_reader.sql_connection.connection import engine
 import pandas as pd
-import json,sys
+import json
+import sys
 import time
 import gc
 import datetime
 
+
 app = Flask(__name__)
 
 
-gen_query = "SELECT * FROM Acc_Voucher_Details"
+gen_query = "SELECT top 100 * FROM LMS_Loan_Master  "
 
-@app.route('/')
+
+@app.route('/', methods=["GET", 'POST'])
 def login():
+    if request.method == "POST":
+        return redirect(url_for(chat))  
     return render_template('login.html')
+
 
 @app.route("/chat", methods=["GET", 'POST'])
 def chat():
     try:
-        start_time = time.time()
+        # start_time = time.time()
         
         # # Fetch columns first
         columns_query = gen_query
@@ -27,13 +33,13 @@ def chat():
 
         columns = columns_df.columns.tolist()
         
-        # deleting the df
+        # deleting the columns_df
         del columns_df
         gc.collect()
 
-        end_time = time.time() - start_time
+        # end_time = time.time() - start_time
         
-        return render_template('home_page.html', columns=columns, end_time=end_time)
+        return render_template('home_page.html', columns=columns)
     except Exception as e:
         logging.error(f"Error in chat route: {e}")
         return f"An error occurred: {e}", 500
@@ -42,6 +48,7 @@ def chat():
 def load_data():
     def generate():
         try:
+            start_time = time.time()
             # Use chunking to retrieve data
             chunk_size = 50
             query = gen_query
@@ -66,9 +73,9 @@ def load_data():
                     'rows': chunk_data,
                     'total_processed': total_rows_processed
                 }) + '\n'
-                sent_till_now = total_rows_processed
-                print(f"TOTAL ROWS SENT :-: {total_rows_processed}")
-                print("="*60)
+                # print(f"TOTAL ROWS SENT :-: {total_rows_processed}")
+                # print(f"time taken :-: {time.time() - start_time}")
+                # print("="*60)
         except Exception as e:
             logging.error(f"Error in data generation: {e}")
             yield json.dumps({"error": str(e)})

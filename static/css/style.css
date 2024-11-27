@@ -3,6 +3,9 @@ body {
     max-width: 1200px;
     margin: 0;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 #dataTable {
     width: 100%;
