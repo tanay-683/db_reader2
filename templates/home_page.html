@@ -1,35 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Streamed Data Table</title>
     <link rel="stylesheet" href="/static/css/style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Audiowide&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Nabla&display=swap"
+        rel="stylesheet">
+
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Major+Mono+Display&family=Nabla&display=swap" rel="stylesheet">
+
+        
+
     <script src="/static/index.js"></script>
 </head>
+
 <body>
-    <div class="q_table">
-        <table id="dataTable">
-            <thead>
-                <tr>
-                    <th>Index</th>
-                </tr>
-            </thead>
-            <tbody id="tableBody"></tbody>
-        </table>
+    <div class="logo">
+        ASK.Finnaux
     </div>
+    <div class="content">
+
+        <div class="q_table">
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+        </div>
 
 
-    <div class="pagination">
-        <button id="prevButton" disabled>Previous</button>
-        <span id="pageInfo">Page 0 of 0</span>
-        <button id="nextButton" disabled>Next</button>
-    </div>
+        <div class="pagination">
+            <button id="prevButton" disabled>Previous</button>
+            <span id="pageInfo">Page 0 of 0</span>
+            <button id="nextButton" disabled>Next</button>
+        </div>
 
-    <div id="loadingIndicator">Loading data...</div>
-    <div id="errorMessage"></div>
-    <div class="query_input">
-        <textarea type="text" id="queryInput" name="query" wrap="soft" rows="3" cols="4 0" required  placeholder="Enter a query"></textarea>
-        <button id="queryButton">Query</button> 
+        <div id="loadingIndicator">Loading data...</div>
+        <div id="errorMessage"></div>
+        <div class="query_input">
+            <textarea type="text" id="queryInput" name="query" wrap="soft" rows="3" cols="4 0" required
+                placeholder="Enter a query"></textarea>
+            <button id="queryButton">Query</button>
+        </div>
+
+
+
     </div>
 </body>
+
 </html>

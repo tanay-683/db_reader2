@@ -9,7 +9,7 @@
     justify-content: center;
 } */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,7 +18,7 @@
     list-style: none;
 }
 
-body{
+.content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,34 +29,53 @@ body{
     background: linear-gradient(90deg, #e2e2e2, #c9d6ff);
 
 }
-.q_table, .pagination {
-    display: none; /* Hide initially */
+
+.logo {
+    font-family: 'Major Mono Display';
+    font-size: 3rem;
+    position: absolute;
+    top: 5;
+    left: 5;
+    background-color: transparent;
+
 }
+
+.q_table,
+.pagination {
+    display: none;
+    /* Hide initially */
+}
+
 #loadingIndicator {
-    display: none; /* Hide initially */
+    display: none;
+    /* Hide initially */
 }
-.q_table{
-    width: 70rem;
+
+.q_table {
+    width: 70%;
     height: 30rem;
     overflow-x: scroll;
     overflow-y: scroll;
 }
+
 #dataTable {
     /* border: 2px solid #212121; */
-    width: 70rem;
+    width: 70%;
     height: 30rem;
     z-index: 3;
     border-collapse: collapse;
-    background-color: #fff;
+    background-color: #ffffffde;
     /* border-radius: 2rem; */
-    
+
 }
 
-#dataTable th, #dataTable td {
+#dataTable th,
+#dataTable td {
     /* border: 1px solid #000000; */
     text-align: center;
     color: #555555;
 }
+
 #dataTable th {
     background-color: #fff;
     font-weight: 500;
@@ -65,16 +84,19 @@ body{
     border-bottom: 1px solid black;
     color: #212121;
 }
-#dataTable tr{
+
+#dataTable tr {
     padding: 20px;
     border: none;
     /* border-bottom: 2px solid #000; */
 }
+
 #dataTable tr:hover {
-    background-color: #ebebeb;
+    background-color: #f3f2f2;
     /* border: 1px solid #000; */
     color: #2a3338;
 }
+
 #dataTable td {
     padding: 20px;
     border-bottom: 1px solid black;
@@ -88,20 +110,26 @@ body{
     gap: 10px;
     margin-top: 15px;
 }
+
 .pagination button {
     padding: 5px 10px;
     cursor: pointer;
+    font-family: "Poppins";
+
 }
-#pageInfo{
-    color: #fff;
+
+#pageInfo {
+    color: #000;
     font-size: 1.2rem;
     /* margin-top: 10px; */
 }
+
 #loadingIndicator {
     text-align: center;
     margin-top: 20px;
     font-style: italic;
 }
+
 #errorMessage {
     color: red;
     text-align: center;
@@ -111,51 +139,71 @@ body{
 
 /* Styling for the query input container */
 .query_input {
-    display: flex;               /* Use flexbox to align items */
-    justify-content: center;     /* Center items horizontally */
-    align-items: end;         /* Center items vertically */
-    gap: 10px;                   /* Space between input and button */
-    margin-top: 20px;            /* Space from the top */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    /* Center items horizontally */
+    align-items: end;
+    /* Center items vertically */
+    gap: 10px;
+    /* Space between input and button */
+    margin-top: 20px;
+    /* Space from the top */
 }
-.query_input > textarea{
-    border-radius: 2rem;
-}
+
 
 /* Styling for the input field */
 #queryInput {
 
-    width: 50rem;
-    padding: 10px;               /* Add some padding inside the input */
-    font-size: 16px;             /* Set font size */
-    border: 2px solid #ccc;     /* Border with light grey color */
-    border-radius: 5px;         /* Rounded corners */
-    outline: none;               /* Remove the outline on focus */
-    transition: border-color 0.3s; /* Smooth transition on focus */
+    width: 100%;
+    padding: 10px;
+    /* Add some padding inside the input */
+    font-size: 16px;
+    /* Set font size */
+    border: 2px solid #ccc;
+    /* Border with light grey color */
+    border-radius: 25px;
+    /* Rounded corners */
+    outline: none;
+    /* Remove the outline on focus */
+    transition: border-color 0.3s;
+    /* Smooth transition on focus */
 }
 
 /* Add focus effect on input */
 #queryInput:focus {
-    border-color: #007BFF;      /* Change border color when focused */
+    border-color: #007BFF;
+    /* Change border color when focused */
 }
 
 /* Styling for the button */
 #queryButton {
-    padding: 10px 20px;          /* Vertical and horizontal padding */
-    font-size: 16px;             /* Font size */
-    background-color: #007BFF;  /* Blue background color */
-    color: white;                /* White text color */
-    border: none;                /* Remove border */
-    border-radius: 5px;          /* Rounded corners */
-    cursor: pointer;            /* Change cursor to pointer on hover */
-    transition: background-color 0.3s; /* Smooth background color transition */
+    padding: 10px 20px;
+    /* Vertical and horizontal padding */
+    font-size: 16px;
+    /* Font size */
+    background-color: #007BFF;
+    /* Blue background color */
+    color: white;
+    /* White text color */
+    border: none;
+    /* Remove border */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    transition: background-color 0.3s;
+    /* Smooth background color transition */
 }
 
 /* Button hover effect */
 #queryButton:hover {
-    background-color: #0056b3;  /* Darker blue background when hovered */
+    background-color: #0056b3;
+    /* Darker blue background when hovered */
 }
 
 /* Button focus effect */
 #queryButton:focus {
-    outline: none;               /* Remove outline when focused */
+    outline: none;
+    /* Remove outline when focused */
 }

@@ -33,7 +33,7 @@ def load_data():
             has_columns_sent = False
             start_time = time.time()
             
-            chunk_size = 1
+            chunk_size = 20
             total_rows_processed = 0
             
             for chunk in pd.read_sql(query, engine, chunksize=chunk_size):
