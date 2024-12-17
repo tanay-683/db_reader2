@@ -7,15 +7,17 @@
     <script src="/static/index.js"></script>
 </head>
 <body>
-    <table id="dataTable">
-        <thead>
-            <tr>
-                <th>Index</th>
-                <!-- Dynamic column headers will be added here -->
-            </tr>
-        </thead>
-        <tbody id="tableBody"></tbody>
-    </table>
+    <div class="q_table">
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+
 
     <div class="pagination">
         <button id="prevButton" disabled>Previous</button>
@@ -25,7 +27,9 @@
 
     <div id="loadingIndicator">Loading data...</div>
     <div id="errorMessage"></div>
-
-
+    <div class="query_input">
+        <input type="text" id="queryInput" name="query" placeholder="Enter a query">
+        <button id="queryButton">Query</button>
+    </div>
 </body>
 </html>

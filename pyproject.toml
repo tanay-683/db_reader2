@@ -17,5 +17,6 @@ dependencies = [
     "flask",
     "python-dotenv",
     "langchain-nvidia-ai-endpoints",
-    "ipykernel"
+    "ipykernel",
+    "ensure>=1.0.4",
 ]

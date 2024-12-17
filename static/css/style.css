@@ -1,4 +1,5 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* body {
     font-family: Arial, sans-serif;
     max-width: 1200px;
     margin: 0;
@@ -6,20 +7,64 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #212121;
+    overflow-x: scroll;
+}
+.q_table{
+    width: 70rem;
+    height: 30rem;
+    overflow-x: scroll;
+    overflow-y: scroll;
 }
 #dataTable {
-    width: 100%;
+    border: 2px solid #212121;
+    width: 70rem;
+    height: 30rem;
+    z-index: 3;
     border-collapse: collapse;
-    margin-bottom: 15px;
+    background-color: #2a3338;
+    border-radius: 2rem;
+    
 }
+
 #dataTable th, #dataTable td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
+    border: 1px solid #000000;
+    text-align: center;
+    color: #fff;
 }
 #dataTable th {
-    background-color: #f2f2f2;
+    background-color: #7494ec;
+    font-weight: 500;
+    padding: 0 5px;
+    font-family: "Poppins";
 }
+#dataTable tr:hover {
+    background-color: #ebebeb;
+    border: 1px solid #000;
+    color: #2a3338;
+}
+#dataTable td {
+    padding: 5px;
+}
+
+
 .pagination {
     display: flex;
     justify-content: center;
@@ -40,4 +85,52 @@ body {
     color: red;
     text-align: center;
     margin-top: 20px;
+}
+
+
+/* Styling for the query input container */
+.query_input {
+    display: flex;               /* Use flexbox to align items */
+    justify-content: center;     /* Center items horizontally */
+    align-items: center;         /* Center items vertically */
+    gap: 10px;                   /* Space between input and button */
+    margin-top: 20px;            /* Space from the top */
+}
+
+/* Styling for the input field */
+#queryInput {
+    width: 50rem;                /* Set a fixed width */
+    padding: 10px;               /* Add some padding inside the input */
+    font-size: 16px;             /* Set font size */
+    border: 2px solid #ccc;     /* Border with light grey color */
+    border-radius: 5px;         /* Rounded corners */
+    outline: none;               /* Remove the outline on focus */
+    transition: border-color 0.3s; /* Smooth transition on focus */
+}
+
+/* Add focus effect on input */
+#queryInput:focus {
+    border-color: #007BFF;      /* Change border color when focused */
+}
+
+/* Styling for the button */
+#queryButton {
+    padding: 10px 20px;          /* Vertical and horizontal padding */
+    font-size: 16px;             /* Font size */
+    background-color: #007BFF;  /* Blue background color */
+    color: white;                /* White text color */
+    border: none;                /* Remove border */
+    border-radius: 5px;          /* Rounded corners */
+    cursor: pointer;            /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+/* Button hover effect */
+#queryButton:hover {
+    background-color: #0056b3;  /* Darker blue background when hovered */
+}
+
+/* Button focus effect */
+#queryButton:focus {
+    outline: none;               /* Remove outline when focused */
 }
