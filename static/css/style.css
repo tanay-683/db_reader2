@@ -26,6 +26,8 @@ body{
     min-height: 100vh;
     background: #212121;
     overflow-x: scroll;
+    background: linear-gradient(90deg, #e2e2e2, #c9d6ff);
+
 }
 .q_table{
     width: 70rem;
@@ -34,34 +36,42 @@ body{
     overflow-y: scroll;
 }
 #dataTable {
-    border: 2px solid #212121;
+    /* border: 2px solid #212121; */
     width: 70rem;
     height: 30rem;
     z-index: 3;
     border-collapse: collapse;
-    background-color: #2a3338;
-    border-radius: 2rem;
+    background-color: #fff;
+    /* border-radius: 2rem; */
     
 }
 
 #dataTable th, #dataTable td {
-    border: 1px solid #000000;
+    /* border: 1px solid #000000; */
     text-align: center;
-    color: #fff;
+    color: #555555;
 }
 #dataTable th {
-    background-color: #7494ec;
+    background-color: #fff;
     font-weight: 500;
-    padding: 0 5px;
+    padding: 20px;
     font-family: "Poppins";
+    border-bottom: 1px solid black;
+    color: #212121;
+}
+#dataTable tr{
+    padding: 20px;
+    border: none;
+    /* border-bottom: 2px solid #000; */
 }
 #dataTable tr:hover {
     background-color: #ebebeb;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     color: #2a3338;
 }
 #dataTable td {
-    padding: 5px;
+    padding: 20px;
+    border-bottom: 1px solid black;
 }
 
 
@@ -75,6 +85,11 @@ body{
 .pagination button {
     padding: 5px 10px;
     cursor: pointer;
+}
+#pageInfo{
+    color: #fff;
+    font-size: 1.2rem;
+    /* margin-top: 10px; */
 }
 #loadingIndicator {
     text-align: center;

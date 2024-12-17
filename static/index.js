@@ -12,15 +12,39 @@ class DataStreamProcessor {
         this.pageInfo = document.getElementById('pageInfo');
         this.loadingIndicator = document.getElementById('loadingIndicator');
         this.errorMessage = document.getElementById('errorMessage');
+        this.queryInput = document.getElementById('queryInput');
+        this.queryButton = document.getElementById('queryButton');
         
         this.prevButton.addEventListener('click', () => this.changePage(-1));
         this.nextButton.addEventListener('click', () => this.changePage(1));
-        
-        this.startDataFetch();
+        this.queryButton.addEventListener('click', () => this.submitQuery());
     }
     
-    startDataFetch() {
-        fetch('/load_data')
+    resetUI() {
+        this.allData = [];
+        this.columns = [];
+        this.tableBody.innerHTML = '';
+        const headerRow = document.querySelector('#dataTable thead tr');
+        headerRow.innerHTML = '<th>Index</th>'; // Reset headers
+        
+        this.loadingIndicator.style.display = 'block';
+        this.errorMessage.textContent = '';
+    }
+    
+    submitQuery() {
+        const query = this.queryInput.value.trim();
+        
+        if (!query) {
+            this.errorMessage.textContent = 'Please enter a valid SQL query';
+            return;
+        }
+        
+        this.resetUI();
+        this.startDataFetch(query);
+    }
+    
+    startDataFetch(query) {
+        fetch(`/load_data?query=${encodeURIComponent(query)}`)
             .then(response => {
                 const reader = response.body.getReader();
                 const decoder = new TextDecoder();
@@ -50,17 +74,31 @@ class DataStreamProcessor {
     
     processBuffer() {
         try {
-            // Split by newline and process complete JSON objects
             const lines = this.buffer.split('\n');
-            
-            // Keep the last (potentially incomplete) line in the buffer
             this.buffer = lines.pop() || '';
             
             lines.forEach(line => {
                 if (line.trim()) {
                     try {
                         const data = JSON.parse(line);
+                        
+                        if (data.error) {
+                            this.errorMessage.textContent = data.error;
+                            this.loadingIndicator.style.display = 'none';
+                            return;
+                        }
+                        
                         if (data.rows) {
+                            if (data.columns) {
+                                this.columns = data.columns;
+                                const headerRow = document.querySelector('#dataTable thead tr');
+                                this.columns.forEach(column => {
+                                    const th = document.createElement('th');
+                                    th.textContent = column;
+                                    headerRow.appendChild(th);
+                                });
+                            }
+                            
                             this.allData.push(...data.rows);
                             this.renderPage(this.currentPage);
                         }
@@ -89,8 +127,6 @@ class DataStreamProcessor {
     
     onDataComplete() {
         this.loadingIndicator.style.display = 'none';
-        
-        // Log total rows for debugging
         console.log(`Total rows received: ${this.allData.length}`);
         
         this.renderPage(1);
@@ -103,29 +139,15 @@ class DataStreamProcessor {
         const endIndex = startIndex + this.pageSize;
         const pageData = this.allData.slice(startIndex, endIndex);
         
-        this.tableBody.innerHTML = ''; // Clear previous rows
+        this.tableBody.innerHTML = '';
         
-        // Dynamically generate headers if not already done
-        if (this.columns.length === 0 && this.allData.length > 0) {
-            this.columns = Object.keys(this.allData[0]);
-            const headerRow = document.querySelector('#dataTable thead tr');
-            this.columns.forEach(column => {
-                const th = document.createElement('th');
-                th.textContent = column;
-                headerRow.appendChild(th);
-            });
-        }
-        
-        // Render rows
         pageData.forEach((row, index) => {
             const tr = document.createElement('tr');
             
-            // Add index column
             const indexCell = document.createElement('td');
             indexCell.textContent = startIndex + index + 1;
             tr.appendChild(indexCell);
             
-            // Add data columns
             this.columns.forEach(column => {
                 const td = document.createElement('td');
                 td.textContent = row[column] ?? 'N/A';
@@ -145,8 +167,6 @@ class DataStreamProcessor {
         this.nextButton.disabled = this.currentPage >= totalPages;
         
         this.pageInfo.textContent = `Page ${this.currentPage} of ${totalPages}`;
-        
-        // Log pagination details for debugging
         console.log(`Total rows: ${this.allData.length}, Page size: ${this.pageSize}, Total pages: ${totalPages}`);
     }
     
@@ -160,7 +180,6 @@ class DataStreamProcessor {
     }
 }
 
-// Initialize the data stream processor when the page loads
 document.addEventListener('DOMContentLoaded', () => {
     new DataStreamProcessor();
 });
