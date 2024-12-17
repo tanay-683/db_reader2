@@ -6,6 +6,8 @@ class DataStreamProcessor {
         this.columns = [];
         this.buffer = '';
         
+        this.tableContainer = document.querySelector('.q_table');
+        this.paginationContainer = document.querySelector('.pagination');
         this.tableBody = document.getElementById('tableBody');
         this.prevButton = document.getElementById('prevButton');
         this.nextButton = document.getElementById('nextButton');
@@ -18,6 +20,18 @@ class DataStreamProcessor {
         this.prevButton.addEventListener('click', () => this.changePage(-1));
         this.nextButton.addEventListener('click', () => this.changePage(1));
         this.queryButton.addEventListener('click', () => this.submitQuery());
+
+        this.hideDataDisplay();  // Initial state
+    }
+    
+    hideDataDisplay() {
+        this.tableContainer.style.display = 'none';
+        this.paginationContainer.style.display = 'none';
+    }
+
+    showDataDisplay() {
+        this.tableContainer.style.display = 'block';
+        this.paginationContainer.style.display = 'flex';
     }
     
     resetUI() {
@@ -25,10 +39,11 @@ class DataStreamProcessor {
         this.columns = [];
         this.tableBody.innerHTML = '';
         const headerRow = document.querySelector('#dataTable thead tr');
-        headerRow.innerHTML = '<th>Index</th>'; // Reset headers
+        headerRow.innerHTML = '<th>Index</th>';
         
         this.loadingIndicator.style.display = 'block';
         this.errorMessage.textContent = '';
+        this.hideDataDisplay();
     }
     
     submitQuery() {
@@ -45,10 +60,9 @@ class DataStreamProcessor {
     
     startDataFetch(query) {
         fetch(`/load_data?query=${encodeURIComponent(query)}`)
-            .then(response => {
-                const reader = response.body.getReader();
+            .then(response => response.body.getReader())
+            .then(reader => {
                 const decoder = new TextDecoder();
-                
                 const processChunk = ({ done, value }) => {
                     if (done) {
                         this.processRemainingBuffer();
@@ -73,43 +87,39 @@ class DataStreamProcessor {
     }
     
     processBuffer() {
-        try {
-            const lines = this.buffer.split('\n');
-            this.buffer = lines.pop() || '';
-            
-            lines.forEach(line => {
-                if (line.trim()) {
-                    try {
-                        const data = JSON.parse(line);
-                        
-                        if (data.error) {
-                            this.errorMessage.textContent = data.error;
-                            this.loadingIndicator.style.display = 'none';
-                            return;
-                        }
-                        
-                        if (data.rows) {
-                            if (data.columns) {
-                                this.columns = data.columns;
-                                const headerRow = document.querySelector('#dataTable thead tr');
-                                this.columns.forEach(column => {
-                                    const th = document.createElement('th');
-                                    th.textContent = column;
-                                    headerRow.appendChild(th);
-                                });
-                            }
-                            
-                            this.allData.push(...data.rows);
-                            this.renderPage(this.currentPage);
-                        }
-                    } catch (parseError) {
-                        console.error('JSON parse error:', parseError);
+        const lines = this.buffer.split('\n');
+        this.buffer = lines.pop() || '';
+        
+        lines.forEach(line => {
+            if (line.trim()) {
+                try {
+                    const data = JSON.parse(line);
+                    if (data.error) {
+                        this.errorMessage.textContent = data.error;
+                        this.loadingIndicator.style.display = 'none';
+                        return;
                     }
+                    
+                    if (data.rows) {
+                        if (data.columns && this.columns.length === 0) {
+                            this.columns = data.columns;
+                            const headerRow = document.querySelector('#dataTable thead tr');
+                            this.columns.forEach(column => {
+                                const th = document.createElement('th');
+                                th.textContent = column;
+                                headerRow.appendChild(th);
+                            });
+                            this.showDataDisplay();  // Show only when data arrives
+                        }
+                        
+                        this.allData.push(...data.rows);
+                        this.renderPage(this.currentPage);
+                    }
+                } catch (parseError) {
+                    console.error('JSON parse error:', parseError);
                 }
-            });
-        } catch (error) {
-            console.error('Buffer processing error:', error);
-        }
+            }
+        });
     }
     
     processRemainingBuffer() {
@@ -127,8 +137,6 @@ class DataStreamProcessor {
     
     onDataComplete() {
         this.loadingIndicator.style.display = 'none';
-        console.log(`Total rows received: ${this.allData.length}`);
-        
         this.renderPage(1);
         this.updatePaginationControls();
     }
@@ -167,14 +175,11 @@ class DataStreamProcessor {
         this.nextButton.disabled = this.currentPage >= totalPages;
         
         this.pageInfo.textContent = `Page ${this.currentPage} of ${totalPages}`;
-        console.log(`Total rows: ${this.allData.length}, Page size: ${this.pageSize}, Total pages: ${totalPages}`);
     }
     
     changePage(delta) {
-        const totalPages = Math.ceil(this.allData.length / this.pageSize);
         const newPage = this.currentPage + delta;
-        
-        if (newPage >= 1 && newPage <= totalPages) {
+        if (newPage >= 1 && newPage <= Math.ceil(this.allData.length / this.pageSize)) {
             this.renderPage(newPage);
         }
     }

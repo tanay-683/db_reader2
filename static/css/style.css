@@ -29,6 +29,12 @@ body{
     background: linear-gradient(90deg, #e2e2e2, #c9d6ff);
 
 }
+.q_table, .pagination {
+    display: none; /* Hide initially */
+}
+#loadingIndicator {
+    display: none; /* Hide initially */
+}
 .q_table{
     width: 70rem;
     height: 30rem;
@@ -107,14 +113,18 @@ body{
 .query_input {
     display: flex;               /* Use flexbox to align items */
     justify-content: center;     /* Center items horizontally */
-    align-items: center;         /* Center items vertically */
+    align-items: end;         /* Center items vertically */
     gap: 10px;                   /* Space between input and button */
     margin-top: 20px;            /* Space from the top */
+}
+.query_input > textarea{
+    border-radius: 2rem;
 }
 
 /* Styling for the input field */
 #queryInput {
-    width: 50rem;                /* Set a fixed width */
+
+    width: 50rem;
     padding: 10px;               /* Add some padding inside the input */
     font-size: 16px;             /* Set font size */
     border: 2px solid #ccc;     /* Border with light grey color */
