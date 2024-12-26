@@ -1,0 +1,11 @@
+this file contains the names of the tables and their explanation in the database.
+
+Acc_Voucher_Details: This table contains detailed information about each accounting voucher, including line items, amounts, and descriptions.
+
+Acc_Voucher_Master: This table holds the master records for accounting vouchers, summarizing the overall voucher information such as voucher number, date, and total amount.
+
+LMS_Amortization: This table tracks the amortization schedules for loans, including payment dates, principal amounts, interest amounts, and remaining balances.
+
+LMS_Loan_Master: This table contains the master records for loans, including loan details such as loan number, borrower information, loan amount, interest rate, and term.
+
+Customer: This table stores information about customers, including customer ID, name, contact details, and other relevant information.

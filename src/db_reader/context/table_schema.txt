@@ -1,0 +1,249 @@
+this file contains the schema of the tables in the database and some sample data from each table.
+
+CREATE TABLE [Acc_Voucher_Details] (
+	[Id] INTEGER NOT NULL IDENTITY(1,1), 
+	[VoucherId] INTEGER NOT NULL, 
+	[CaseNo] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[CustomerId] INTEGER NULL, 
+	[Is_LOSAppliaction] BIT NULL, 
+	[LOS_TransactionId] INTEGER NULL, 
+	[ChargeHeadId] INTEGER NULL, 
+	[ChargeHeadCategory] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[AccountId] INTEGER NULL, 
+	[BranchId] INTEGER NULL, 
+	[TranType] CHAR(2) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Amount] NUMERIC(18, 2) NULL, 
+	[IsTax] BIT NULL, 
+	[Tax_Per] NUMERIC(18, 2) NULL, 
+	[GST_Type] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[GST_No] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Party_AccountName] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[HSN_Code] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Slab_Name] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Bind_Voucher] INTEGER NULL, 
+	[Type] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+)
+
+/*
+3 rows from Acc_Voucher_Details table:
+Id	VoucherId	CaseNo	CustomerId	Is_LOSAppliaction	LOS_TransactionId	ChargeHeadId	ChargeHeadCategory	AccountId	BranchId	TranType	Amount	IsTax	Tax_Per	GST_Type	GST_No	Party_AccountName	HSN_Code	Slab_Name	Bind_Voucher	Type
+8645	103109	None	None	False	None	None	Icici Bank A/C No. - 065005501479                 	45	None	DR	10500.00	None	None	None	None	None	None	None	None	None
+8646	103110	4371	26437	False	None	32	Cheque In Transit                                 	342	17	CR	6300.00	None	None	None	None	None	None	None	None	None
+8647	103110	None	None	False	None	None	Icici Bank A/C No. - 065005501479                 	45	None	DR	6300.00	None	None	None	None	None	None	None	None	None
+*/
+
+
+CREATE TABLE [Acc_Voucher_Master] (
+	[VoucherId] INTEGER NOT NULL IDENTITY(1,1), 
+	[Voucher_No] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL, 
+	[Voucher_Status] VARCHAR(15) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL, 
+	[Voucher_ReceiptNo_Sys] INTEGER NULL, 
+	[Voucher_ReceiptNo_Book] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Voucher_ReceiptDate] DATE NULL, 
+	[Voucher_Type] VARCHAR(20) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL, 
+	[Voucher_Sub_Type] VARCHAR(20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Voucher_Tag] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Voucher_Date] DATE NOT NULL, 
+	[Voucher_Effective_Date] DATE NULL, 
+	[Voucher_Mode_of_Payment] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Voucher_Total_Credit_Amount] NUMERIC(18, 2) NULL, 
+	[Voucher_Total_Debit_Amount] NUMERIC(18, 2) NULL, 
+	[Voucher_Total_Tax] NUMERIC(18, 2) NULL, 
+	[Voucher_Narration] VARCHAR(500) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Voucher_Cheque_No] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Voucher_Cheque_Date] DATE NULL, 
+	[Voucher_Bank_Name] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Voucher_Cheque_Clear_Date] DATE NULL, 
+	[Voucher_E_Transaction_Date] DATE NULL, 
+	[Voucher_E_Ref_No] VARCHAR(500) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Voucher_CreateOn] DATETIME NOT NULL, 
+	[Voucher_CreateBy] INTEGER NOT NULL, 
+	[Voucher_IsActive] BIT NOT NULL, 
+	[Voucher_ModifyBy] INTEGER NULL, 
+	[Voucher_ModifyOn] DATETIME NULL, 
+	[Voucher_AuthorizRemark] VARCHAR(500) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Voucher_AuthorizOn] DATETIME NULL, 
+	[Voucher_AuthorizBy] INTEGER NULL, 
+	[Voucher_IsAudit] BIT NOT NULL, 
+	[Voucher_AuditOn] DATETIME NULL, 
+	[Voucher_AuditBy] INTEGER NULL, 
+	[Voucher_LoanId] INTEGER NULL, 
+	[Origin] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[LatLong] VARCHAR(100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+)
+
+/*
+3 rows from Acc_Voucher_Master table:
+VoucherId	Voucher_No	Voucher_Status	Voucher_ReceiptNo_Sys	Voucher_ReceiptNo_Book	Voucher_ReceiptDate	Voucher_Type	Voucher_Sub_Type	Voucher_Tag	Voucher_Date	Voucher_Effective_Date	Voucher_Mode_of_Payment	Voucher_Total_Credit_Amount	Voucher_Total_Debit_Amount	Voucher_Total_Tax	Voucher_Narration	Voucher_Cheque_No	Voucher_Cheque_Date	Voucher_Bank_Name	Voucher_Cheque_Clear_Date	Voucher_E_Transaction_Date	Voucher_E_Ref_No	Voucher_CreateOn	Voucher_CreateBy	Voucher_IsActive	Voucher_ModifyBy	Voucher_ModifyOn	Voucher_AuthorizRemark	Voucher_AuthorizOn	Voucher_AuthorizBy	Voucher_IsAudit	Voucher_AuditOn	Voucher_AuditBy	Voucher_LoanId	Origin	LatLong
+2952	RP6	Created	None	None	None	Repayment	Loan	None	2019-03-20	2019-03-20	None	3150.00	3150.00	None	Installment6	None	None	None	None	None	None	2019-03-20 00:00:00	1	True	None	None	None	None	None	False	None	None	2272	None	None
+2953	RP1	Created	None	None	None	Repayment	Loan	None	2019-04-17	2019-04-17	None	116.00	116.00	None	Loan Closer	None	None	None	None	None	None	2019-04-17 00:00:00	1	True	None	None	None	None	None	False	None	None	2272	None	None
+2954	RP1	Created	None	None	None	Repayment	Loan	None	2018-10-20	2018-10-20	None	10500.00	10500.00	None	Installment1	None	None	None	None	None	None	2018-10-20 00:00:00	1	True	None	None	None	None	None	False	None	None	2130	None	None
+*/
+
+
+CREATE TABLE [Customer] (
+	[CustomerId] INTEGER NOT NULL IDENTITY(1,1), 
+	[Customer_FirstName] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL, 
+	[Customer_LastName] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Customer_FatherName] VARCHAR(100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Customer_Gender] CHAR(1) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL, 
+	[Customer_DOB] DATE NOT NULL, 
+	[Customer_ProfilePic] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Customer_PhoneNo] VARCHAR(15) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL, 
+	[Customer_PhoneNo1] VARCHAR(15) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Customer_PhoneNo2] VARCHAR(15) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Customer_WhatsAppNo] VARCHAR(15) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Customer_PhoneNo_IsVerified] BIT NOT NULL, 
+	[Customer_Email] VARCHAR(150) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Customer_Website] VARCHAR(250) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Customer_Religion] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Customer_Cast] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Customer_MaritalStatus] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Customer_IsActive] BIT NOT NULL, 
+	[Customer_CreateOn] DATETIME NOT NULL, 
+	[Customer_CreateBy] INTEGER NOT NULL, 
+	[Customer_ModifyOn] DATETIME NULL, 
+	[Customer_ModifyBy] INTEGER NULL, 
+	[Customer_IsFirm] BIT NOT NULL, 
+	[Customer_FirmType] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Customer_Date_Of_Incorruptions] DATE NULL, 
+	[Customer_NoOfPartner] INTEGER NULL, 
+	[Customer_NoofEmployee] INTEGER NULL, 
+	[Customer_GrossValue] NUMERIC(18, 0) NULL, 
+	[Customer_Nature_Of_Business] VARCHAR(500) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Customer_Relation] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Customer_Relation_FirstName] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Customer_Relation_LastName] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Customer_Occupation] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Customer_CIN_Number] VARCHAR(100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+)
+
+/*
+3 rows from Customer table:
+CustomerId	Customer_FirstName	Customer_LastName	Customer_FatherName	Customer_Gender	Customer_DOB	Customer_ProfilePic	Customer_PhoneNo	Customer_PhoneNo1	Customer_PhoneNo2	Customer_WhatsAppNo	Customer_PhoneNo_IsVerified	Customer_Email	Customer_Website	Customer_Religion	Customer_Cast	Customer_MaritalStatus	Customer_IsActive	Customer_CreateOn	Customer_CreateBy	Customer_ModifyOn	Customer_ModifyBy	Customer_IsFirm	Customer_FirmType	Customer_Date_Of_Incorruptions	Customer_NoOfPartner	Customer_NoofEmployee	Customer_GrossValue	Customer_Nature_Of_Business	Customer_Relation	Customer_Relation_FirstName	Customer_Relation_LastName	Customer_Occupation	Customer_CIN_Number
+14390	Raj Kumar	Shershah	None	M	1978-10-10	None	9887067424	               			False	                                		None	None	Married	True	2022-03-11 12:52:15.260000	1	None	None	False	None	None	None	None	None	None	S/O	Ram Swaroop	Shershah	52	None
+14429	Shankar 	Lal	None	M	1900-01-01	None	9887067424	               			False			None	None	Married	True	2022-03-11 12:52:15.260000	1	None	None	False	None	None	None	None	None	None	S/O	Chandra 	Ram	52	None
+14450	Pradeep 	Kala	None	M	1969-04-02	None	9887067424	               			False			None	None	Married	True	2022-03-11 12:52:15.260000	1	None	None	False	None	None	None	None	None	None	S/O	Dolat Mal	Kala	52	None
+*/
+
+
+CREATE TABLE [LMS_Amortization] (
+	[Id] INTEGER NOT NULL IDENTITY(1,1), 
+	[Loan_Id] INTEGER NOT NULL, 
+	[Period] INTEGER NOT NULL, 
+	[DueDate] DATETIME NOT NULL, 
+	[EMI_Amount] FLOAT(53) NOT NULL, 
+	[Principle] FLOAT(53) NOT NULL, 
+	[Interest] FLOAT(53) NOT NULL, 
+	[Outstanding_Principle] FLOAT(53) NOT NULL, 
+	[Type] NVARCHAR(20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[CreateOn] DATETIME NOT NULL, 
+	[Recd_Flag] INTEGER NOT NULL, 
+	[IsActive] BIT NOT NULL
+)
+
+/*
+3 rows from LMS_Amortization table:
+Id	Loan_Id	Period	DueDate	EMI_Amount	Principle	Interest	Outstanding_Principle	Type	CreateOn	Recd_Flag	IsActive
+1	2209	1	2018-06-20 00:00:00	15750.0	14633.0	1117.0	15181.0	None	2018-06-20 00:00:00	1	True
+2	2209	0	2018-06-20 00:00:00	0.0	-569.0	569.0	15750.0	None	2018-06-20 00:00:00	1	True
+3	2210	1	2018-05-20 00:00:00	21000.0	19510.0	1490.0	20242.0	None	2018-05-20 00:00:00	1	True
+*/
+
+
+CREATE TABLE [LMS_Loan_Master] (
+	[Loan_Id] INTEGER NOT NULL IDENTITY(1,1), 
+	[Application_BranchId] INTEGER NOT NULL, 
+	[Application_No] VARCHAR(10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[LoanAcNo] VARCHAR(10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Application_Status] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL, 
+	[Application_InquiryNo] VARCHAR(10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Application_PrductId] INTEGER NOT NULL, 
+	[Application_AssetCost] NUMERIC(18, 2) NULL, 
+	[Application_LoanAmount] NUMERIC(18, 2) NULL, 
+	[Application_LoanTenure] INTEGER NULL, 
+	[Application_LoanDuration_Month] INTEGER NULL, 
+	[Application_AdvInstl] INTEGER NULL, 
+	[Application_ManagementFee] NUMERIC(18, 2) NULL, 
+	[Application_DisbursementAmt] NUMERIC(18, 5) NULL, 
+	[Application_AgreementValue] NUMERIC(18, 5) NULL, 
+	[Application_InterestAmt] NUMERIC(18, 5) NULL, 
+	[Application_LTV] NUMERIC(18, 5) NULL, 
+	[Application_LoanEMIAmount] NUMERIC(18, 5) NULL, 
+	[Application_EMIType] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Application_LoanIRRate] NUMERIC(18, 10) NULL, 
+	[Application_IRR_Type] VARCHAR(10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Application_IRR_CalculateBy] VARCHAR(20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Application_Case_IRR] NUMERIC(18, 10) NULL, 
+	[Application_Disbursement_IRR] NUMERIC(18, 10) NULL, 
+	[Application_Loan_SchemeId] INTEGER NULL, 
+	[Application_LoanPurpose] VARCHAR(150) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Application_CreateOn] DATETIME NULL, 
+	[Application_CreateBy] INTEGER NULL, 
+	[Application_ApprovedLoanAmount] NUMERIC(18, 2) NULL, 
+	[Application_ApprovedLoanDouration_Month] INTEGER NULL, 
+	[Application_CreditApprovalNote] VARCHAR(max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Application_ApproveDate] DATETIME NULL, 
+	[Application_TotalDeduction] NUMERIC(18, 2) NULL, 
+	[Application_Account_CustomerId] INTEGER NULL, 
+	[Application_ChequeAmount] NUMERIC(18, 2) NULL, 
+	[Application_ChequeNo] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Application_IRRate] NUMERIC(18, 10) NULL, 
+	[Application_BankName] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Application_BankBranch] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Application_IFSCCode] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Application_AccountNo] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Application_AccountHolderName] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[Application_ChqueDate] DATE NULL, 
+	[Application_EMIAmount] NUMERIC(18, 2) NULL, 
+	[Application_EMIMonthDay] INTEGER NULL, 
+	[Application_FirstEMIDate] DATE NULL, 
+	[Application_ExpiryDate] DATE NULL, 
+	[Application_ModifyBy] INTEGER NULL, 
+	[Application_ModifyOn] DATETIME NULL, 
+	[Loan_Date] DATETIME NULL, 
+	[IsActive] INTEGER NULL, 
+	[LoanAccountingId] INTEGER NULL, 
+	[LoanCreatedBy] INTEGER NULL, 
+	[SourceType] VARCHAR(100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[BranchHead] INTEGER NULL, 
+	[LeadSourceName] INTEGER NULL, 
+	[CollectionArea] INTEGER NULL, 
+	[SalesExecutive] INTEGER NULL, 
+	[CollectionSubarea] INTEGER NULL, 
+	[SourceArea] INTEGER NULL, 
+	[CollectionExecutive] INTEGER NULL, 
+	[LeadReference] VARCHAR(200) COLLATE SQL_Latin1_General_CP1_CI_AS NULL, 
+	[IsLoanInfo] INTEGER NULL, 
+	[IsCustomerInfo] INTEGER NULL, 
+	[IsAccountInfo] INTEGER NULL, 
+	[IsAssetInfo] INTEGER NULL, 
+	[IsCrcInfo] INTEGER NULL, 
+	[IsFiTvrInfo] INTEGER NULL, 
+	[IsChequeDetailInfo] INTEGER NULL, 
+	[IsInsuranceInfo] INTEGER NULL, 
+	[IsRepaymentScheduleInfo] INTEGER NULL, 
+	[IsDvReportInfo] INTEGER NULL, 
+	[IsAmortizationInfos] INTEGER NULL, 
+	[IsNoteRecommendation] INTEGER NULL, 
+	[IsAttachment] INTEGER NULL, 
+	[IsLoanNo] INTEGER NULL, 
+	[LOS_ApplicationId] INTEGER NULL, 
+	[LoanCreatedOn] DATETIME NULL, 
+	[LoanClosed_Date] DATETIME NULL, 
+	[LoanClosed_By] INTEGER NULL, 
+	[SuitFiled] INTEGER NULL, 
+	[WriteOff_Settled_Status] INTEGER NULL, 
+	[Financial_CreatedBy] INTEGER NULL, 
+	[Financial_CreatedOn] DATETIME NULL, 
+	[Financial_ModifyBy] INTEGER NULL, 
+	[Financial_ModifyOn] DATETIME NULL
+)
+
+/*
+3 rows from LMS_Loan_Master table:
+Loan_Id	Application_BranchId	Application_No	LoanAcNo	Application_Status	Application_InquiryNo	Application_PrductId	Application_AssetCost	Application_LoanAmount	Application_LoanTenure	Application_LoanDuration_Month	Application_AdvInstl	Application_ManagementFee	Application_DisbursementAmt	Application_AgreementValue	Application_InterestAmt	Application_LTV	Application_LoanEMIAmount	Application_EMIType	Application_LoanIRRate	Application_IRR_Type	Application_IRR_CalculateBy	Application_Case_IRR	Application_Disbursement_IRR	Application_Loan_SchemeId	Application_LoanPurpose	Application_CreateOn	Application_CreateBy	Application_ApprovedLoanAmount	Application_ApprovedLoanDouration_Month	Application_CreditApprovalNote	Application_ApproveDate	Application_TotalDeduction	Application_Account_CustomerId	Application_ChequeAmount	Application_ChequeNo	Application_IRRate	Application_BankName	Application_BankBranch	Application_IFSCCode	Application_AccountNo	Application_AccountHolderName	Application_ChqueDate	Application_EMIAmount	Application_EMIMonthDay	Application_FirstEMIDate	Application_ExpiryDate	Application_ModifyBy	Application_ModifyOn	Loan_Date	IsActive	LoanAccountingId	LoanCreatedBy	SourceType	BranchHead	LeadSourceName	CollectionArea	SalesExecutive	CollectionSubarea	SourceArea	CollectionExecutive	LeadReference	IsLoanInfo	IsCustomerInfo	IsAccountInfo	IsAssetInfo	IsCrcInfo	IsFiTvrInfo	IsChequeDetailInfo	IsInsuranceInfo	IsRepaymentScheduleInfo	IsDvReportInfo	IsAmortizationInfos	IsNoteRecommendation	IsAttachment	IsLoanNo	LOS_ApplicationId	LoanCreatedOn	LoanClosed_Date	LoanClosed_By	SuitFiled	WriteOff_Settled_Status	Financial_CreatedBy	Financial_CreatedOn	Financial_ModifyBy	Financial_ModifyOn
+1603	19	3691	3691	Completed	None	1	0.00	26839.00	4	4	0	None	26839.00000	29400.00000	2561.00000	0.00000	7350.00000	Monthly	44.9700000000	Flat	ROI	44.9700000000	44.9700000000	None	Data MIG	2018-04-01 00:00:00	1	26839.00	4	Migration	2018-04-01 00:00:00	0.00	26741	26839.00	None	28.6300000000	None	None	None	None	None	None	7350.00	20	2018-05-20	2018-08-20	None	None	2018-04-25 00:00:00	1	1	1	Walking Customer	1	None	None	1	18	18	16	None	1	1	1	1	1	1	1	1	1	1	1	1	1	1	None	2018-04-25 00:00:00	None	None	None	None	None	None	None	None
+1604	19	3713	3713	Completed	None	1	0.00	47076.00	5	5	0	None	47076.00000	52500.00000	5424.00000	0.00000	10500.00000	Monthly	44.9800000000	Flat	ROI	44.9800000000	44.9800000000	None	Data MIG	2018-04-01 00:00:00	1	47076.00	5	Migration	2018-04-01 00:00:00	0.00	26762	47076.00	None	27.6500000000	None	None	None	None	None	None	10500.00	5	2018-05-05	2018-09-05	None	None	2018-04-25 00:00:00	1	1	1	Walking Customer	1	None	None	1	18	18	16	None	1	1	1	1	1	1	1	1	1	1	1	1	1	1	None	2018-04-25 00:00:00	None	None	None	None	None	None	None	None
+1605	19	3714	3714	Completed	None	1	0.00	47076.00	5	5	0	None	47076.00000	52500.00000	5424.00000	0.00000	10500.00000	Monthly	44.9800000000	Flat	ROI	44.9800000000	44.9800000000	None	Data MIG	2018-04-01 00:00:00	1	47076.00	5	Migration	2018-04-01 00:00:00	0.00	26764	47076.00	None	27.6500000000	None	None	None	None	None	None	10500.00	5	2018-05-05	2018-09-05	None	None	2018-04-25 00:00:00	1	1	1	Walking Customer	1	None	None	1	18	18	16	None	1	1	1	1	1	1	1	1	1	1	1	1	1	1	None	2018-04-25 00:00:00	None	None	None	None	None	None	None	None
+*/

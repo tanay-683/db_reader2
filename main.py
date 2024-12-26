@@ -4,15 +4,17 @@ import pandas as pd
 import json
 import time
 import datetime
+
 from src.db_reader.preprocessing.preprocess import ChunkCleaningPipeline
 from src.db_reader.sql_connection.connection import engine
+from db_reader.nl_to_sql.nl_to_sql import generate_sql_query
 
 app = Flask(__name__)
 
 @app.route('/', methods=["GET", 'POST'])
 def login():
     if request.method == "POST":
-        return redirect(url_for('chat'))
+        return redirect(url_for('chat'))    
     return render_template('login.html')
 
 @app.route("/chat", methods=["GET", 'POST'])
@@ -21,9 +23,12 @@ def chat():
 
 @app.route('/load_data')
 def load_data():
+    # query = request.args.get('query', None)
     query = request.args.get('query', None)
 
-    if not query:
+    sql_query = generate_sql_query(query)
+    logging.info(f"\n\n SQL Query generated: {sql_query}\n\n")
+    if not sql_query:
         def generate():
             yield json.dumps({"error": "No query submitted"}) + '\n'
         return Response(generate(), mimetype='application/json')
@@ -36,7 +41,7 @@ def load_data():
             chunk_size = 20
             total_rows_processed = 0
             
-            for chunk in pd.read_sql(query, engine, chunksize=chunk_size):
+            for chunk in pd.read_sql(sql_query, engine, chunksize=chunk_size):
                 for col in chunk.columns:
                     if chunk[col].dtype == 'datetime64[ns]':
                         chunk[col] = chunk[col].dt.strftime('%Y-%m-%d %H:%M:%S')
