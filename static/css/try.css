@@ -1,0 +1,12 @@
+textarea {
+    width: 20%; /* Full width like ChatGPT interface */
+    min-height: 50px; /* Initial height */
+    max-height: 200px; /* Prevent excessive growth */
+    resize: none; /* Disable manual resizing */
+    overflow-y: auto; /* Enable vertical scrolling when content exceeds max-height */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Rounded corners like modern AI interfaces */
+    line-height: 1.5;
+    font-size: 16px;
+}

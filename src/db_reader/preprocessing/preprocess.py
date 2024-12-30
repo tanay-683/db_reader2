@@ -68,3 +68,8 @@ class ChunkCleaningPipeline:
     
     def execute(self):
         return self.chunk
+    
+# creating a object of above pipeline and use that pipeline
+class PreprocessPipeline:
+    def __init__(self, chunk:pd.DataFrame):
+        self.chunking_pipeline = ChunkCleaningPipeline(chunk)

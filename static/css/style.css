@@ -52,7 +52,7 @@
 }
 
 .q_table {
-    width: 70%;
+    width: 50%;
     height: 30rem;
     overflow-x: scroll;
     overflow-y: scroll;
@@ -60,7 +60,7 @@
 
 #dataTable {
     /* border: 2px solid #212121; */
-    width: 70%;
+    width: 50%;
     height: 30rem;
     z-index: 3;
     border-collapse: collapse;

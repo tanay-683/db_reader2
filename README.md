@@ -13,7 +13,9 @@
 - table UI
 
 ## Development
-- remove langchain
+- enable `sql_only`
+- improve tables description(tables.txt) 
+- remove langchain environment
 - add logging and error handling
 - add tests
 - how to load all model/embeddings only once and store them in memory

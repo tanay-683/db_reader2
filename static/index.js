@@ -47,6 +47,7 @@ class DataStreamProcessor {
     }
     
     submitQuery() {
+        
         const query = this.queryInput.value.trim();
         
         if (!query) {

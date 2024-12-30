@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        textarea {
+            width: 20%;
+            min-height: 50px;
+            max-height: 200px;
+            resize: none;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            line-height: 1.5;
+            font-size: 16px;
+            overflow-y: hidden; /* Initially hide scrollbar */
+        }
+    </style>
+</head>
+<body>
+    <textarea placeholder="Type your message..."></textarea>
+
+    <script>
+        const textarea = document.querySelector('textarea');
+
+        textarea.addEventListener('input', function() {
+            this.style.height = 'auto';
+            this.style.height = `${this.scrollHeight}px`;
+            
+            const maxHeight = 200;
+            if (this.scrollHeight > maxHeight) {
+                this.style.height = `${maxHeight}px`;
+                this.style.overflowY = 'auto';
+            }
+        });
+    </script>
+</body>
+</html>
