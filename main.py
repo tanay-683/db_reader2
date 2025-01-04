@@ -1,18 +1,16 @@
 from flask import Flask, render_template, Response, request, redirect, url_for, jsonify
-import logging,json, time, datetime
+import logging,json, time, datetime, sys
 import pandas as pd
 
-from src.db_reader.preprocessing.preprocess import ChunkCleaningPipeline
-# from db_reader.nl_to_sql.nl_to_sql import generate_sql_query
-from db_reader.config.config import CHUNK_SIZE
-from db_reader.config.config import QueryEngine
-from db_reader.config.config import engine
-from db_reader.config.config import SettingConfigurationManager
+from src.db_reader.preprocessing.preprocess import InitiateChunkCleaningPipeline
+from src.db_reader.nl_to_sql.nl_to_sql import QueryEngine
+from src.db_reader.config.config import engine, CHUNK_SIZE
 
 app = Flask(__name__)
 
-# setting_config_manager = SettingConfigurationManager()
+
 queryEngine = QueryEngine()
+query_engine = queryEngine.get_query_engine()
 
 
 @app.route('/', methods=["GET", 'POST'])
@@ -24,6 +22,7 @@ def login():
 
 @app.route("/chat", methods=["GET", 'POST'])
 def chat(): 
+    query_engine = queryEngine.get_query_engine()
     return render_template('home_page.html')
 
 
@@ -32,8 +31,8 @@ def load_data():
     # query = request.args.get('query', None)
     query = request.args.get('query', None)
 
-    sql_query = queryEngine.generate_sql_query(query)
-    logging.info(f"\n\n SQL Query generated: {sql_query}\n\n")
+    # sql_query = queryEngine.generate_sql_query(query)
+    # logging.info(f"\n\n SQL Query generated: {sql_query}\n\n")
     
     
     if not query:
@@ -55,17 +54,9 @@ def load_data():
                         chunk[col] = chunk[col].dt.strftime('%Y-%m-%d %H:%M:%S')
                     elif chunk[col].dtype == 'object':
                         chunk[col] = chunk[col].apply(lambda x: x.strftime('%Y-%m-%d') if isinstance(x, datetime.date) else x)
+                        
+                chunk = InitiateChunkCleaningPipeline(chunk).get_cleaned_chunk()
                 
-                pipeline = ChunkCleaningPipeline(chunk)
-                chunk = list(pipeline
-                    .remove_unnecessary_columns()
-                    .prune_columns_with_high_null_percentage()
-                    .downcasting_dataframe_datatypes()
-                    .format_data_and_datetime_to_string()
-                    .convert_chunk_to_dictionary()
-                    .nan_to_none()
-                    .execute()
-                )
                 
                 total_rows_processed += len(chunk)
                 
@@ -83,6 +74,7 @@ def load_data():
                     }) + '\n'
                 
                 print("="*60)
+                print(f"Chunk Size :-: {sys.getsizeof(chunk)}")
                 print(f"TOTAL ROWS SENT :-: {total_rows_processed}")
                 print(f"time taken :-: {time.time() - start_time}")
                 print("="*60)

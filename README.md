@@ -13,10 +13,11 @@
 - table UI
 
 ## Development
-- enable `sql_only`
+- check kro ki har run component loading ko kaise kam kr skte h
+- make a configuration page
+
 - improve tables description(tables.txt) 
 - remove langchain environment
-- add logging and error handling
 - add tests
 - how to load all model/embeddings only once and store them in memory
 

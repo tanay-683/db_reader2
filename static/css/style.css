@@ -37,7 +37,14 @@
     top: 5;
     left: 5;
     background-color: transparent;
+}
 
+.config{
+    position: absolute;
+    top: 5;
+    left: 5;
+    background-color: transparent;
+    z-index: 3;
 }
 
 .q_table,

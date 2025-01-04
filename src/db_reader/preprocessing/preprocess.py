@@ -9,6 +9,7 @@ from ensure import ensure_annotations
 class ChunkCleaningPipeline:
     def __init__(self, chunk:pd.DataFrame):
         self.chunk = chunk
+        
         self.columns = self.chunk.columns
     
     
@@ -21,6 +22,7 @@ class ChunkCleaningPipeline:
             elif re.search(pattern="create|modify", string=col, flags=re.IGNORECASE):
                 col_to_remove.append(col)
         self.chunk.drop(columns=col_to_remove, inplace=True)
+        logging.info(f"\n\n\n Columns removed: {col_to_remove}\n\n\n")
         return self
     
     
@@ -29,8 +31,6 @@ class ChunkCleaningPipeline:
         # removing columns which contain 85% none values
         threshold: float = 0.85
         self.chunk = self.chunk.loc[:, self.chunk.isnull().mean() <= threshold]
- 
-        
         return self
 
 
@@ -70,6 +70,22 @@ class ChunkCleaningPipeline:
         return self.chunk
     
 # creating a object of above pipeline and use that pipeline
-class PreprocessPipeline:
+class InitiateChunkCleaningPipeline:
     def __init__(self, chunk:pd.DataFrame):
-        self.chunking_pipeline = ChunkCleaningPipeline(chunk)
+        self.chunk = chunk
+        self.chunking_pipeline = ChunkCleaningPipeline(self.chunk)
+        
+    
+    def get_cleaned_chunk(self):
+        
+        self.chunk = list(self.chunking_pipeline
+                    .remove_unnecessary_columns()
+                    .prune_columns_with_high_null_percentage()
+                    .downcasting_dataframe_datatypes()
+                    .format_data_and_datetime_to_string()
+                    .convert_chunk_to_dictionary()
+                    .nan_to_none()
+                    .execute()
+                )
+        return self.chunk
+    

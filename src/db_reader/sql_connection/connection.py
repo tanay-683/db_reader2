@@ -3,7 +3,7 @@ import os, sys
 import logging
 from llama_index.core import SQLDatabase
 from dataclasses import dataclass
-
+from ensure import ensure_annotations
 
 @dataclass
 class SqlConnetionConfig:
@@ -13,7 +13,8 @@ class SqlConnection:
     def __init__(self):
         pass
     
-    def get_engine(self):
+    def get_engine(self)-> create_engine:
+        
         '''
         Returns a connection engine object
         '''
@@ -33,8 +34,7 @@ class SqlConnection:
         except:
             logging.error("Failed to establish connection with database!!!")
             
-            
-    def get_sql_database(self, tables:list[str]):
+    def get_sql_database(self, tables:list[str])-> SQLDatabase:
         '''
         Returns a SQLDatabase object
         '''

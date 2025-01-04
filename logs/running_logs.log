@@ -308,3 +308,2115 @@
 [2024-12-30 11:51:23,929: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
 [2024-12-30 11:51:23,929: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
 [2024-12-30 11:51:23,929: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 13:39:56,776: INFO: connection: Connection established:]
+[2024-12-30 13:39:58,926: INFO: connection: Connection established:]
+[2024-12-30 13:40:00,971: INFO: config: embed_model was NONE, setting it to <class 'llama_index.embeddings.huggingface.base.HuggingFaceEmbedding'>!!!:]
+[2024-12-30 13:40:00,972: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2:]
+[2024-12-30 13:40:05,547: INFO: SentenceTransformer: 2 prompts are loaded, with the keys: ['query', 'text']:]
+[2024-12-30 13:40:05,547: INFO: config: embed_model set to <class 'llama_index.embeddings.huggingface.base.HuggingFaceEmbedding'>!!!:]
+[2024-12-30 13:40:07,178: INFO: config: llm was NONE, setting it to callback_manager=<llama_index.core.callbacks.base.CallbackManager object at 0x7fa27d9e6260> system_prompt=None messages_to_prompt=<function messages_to_prompt at 0x7fa33f6193f0> completion_to_prompt=<function default_completion_to_prompt at 0x7fa33f6f8af0> output_parser=None pydantic_program_mode=<PydanticProgramMode.DEFAULT: 'default'> query_wrapper_prompt=None model='models/gemini-pro' temperature=0.1 max_tokens=2048 generate_kwargs={}!!!:]
+[2024-12-30 13:40:08,817: INFO: config: llm set to Gemini!!!:]
+[2024-12-30 13:40:08,817: INFO: config: embed_model was not NONE, setting it to HuggingFaceEmbedding!!!:]
+[2024-12-30 13:40:08,817: INFO: config: llm was not NONE, setting it to callback_manager=<llama_index.core.callbacks.base.CallbackManager object at 0x7fa27d9e61d0> system_prompt=None messages_to_prompt=<function messages_to_prompt at 0x7fa33f6193f0> completion_to_prompt=<function default_completion_to_prompt at 0x7fa33f6f8af0> output_parser=None pydantic_program_mode=<PydanticProgramMode.DEFAULT: 'default'> query_wrapper_prompt=None model='models/gemini-pro' temperature=0.1 max_tokens=2048 generate_kwargs={}!!!:]
+[2024-12-30 13:40:08,846: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000:]
+[2024-12-30 13:40:08,846: INFO: _internal: [33mPress CTRL+C to quit[0m:]
+[2024-12-30 13:40:08,847: INFO: _internal:  * Restarting with stat:]
+[2024-12-30 13:40:16,566: INFO: connection: Connection established:]
+[2024-12-30 13:40:18,088: INFO: connection: Connection established:]
+[2024-12-30 13:40:19,164: INFO: config: embed_model was NONE, setting it to <class 'llama_index.embeddings.huggingface.base.HuggingFaceEmbedding'>!!!:]
+[2024-12-30 13:40:19,166: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2:]
+[2024-12-30 13:40:22,746: INFO: SentenceTransformer: 2 prompts are loaded, with the keys: ['query', 'text']:]
+[2024-12-30 13:40:22,747: INFO: config: embed_model set to <class 'llama_index.embeddings.huggingface.base.HuggingFaceEmbedding'>!!!:]
+[2024-12-30 13:40:24,380: INFO: config: llm was NONE, setting it to callback_manager=<llama_index.core.callbacks.base.CallbackManager object at 0x7a98eadf6830> system_prompt=None messages_to_prompt=<function messages_to_prompt at 0x7a99acc096c0> completion_to_prompt=<function default_completion_to_prompt at 0x7a99acaf0ee0> output_parser=None pydantic_program_mode=<PydanticProgramMode.DEFAULT: 'default'> query_wrapper_prompt=None model='models/gemini-pro' temperature=0.1 max_tokens=2048 generate_kwargs={}!!!:]
+[2024-12-30 13:40:26,018: INFO: config: llm set to Gemini!!!:]
+[2024-12-30 13:40:26,018: INFO: config: embed_model was not NONE, setting it to HuggingFaceEmbedding!!!:]
+[2024-12-30 13:40:26,018: INFO: config: llm was not NONE, setting it to callback_manager=<llama_index.core.callbacks.base.CallbackManager object at 0x7a98eadf67a0> system_prompt=None messages_to_prompt=<function messages_to_prompt at 0x7a99acc096c0> completion_to_prompt=<function default_completion_to_prompt at 0x7a99acaf0ee0> output_parser=None pydantic_program_mode=<PydanticProgramMode.DEFAULT: 'default'> query_wrapper_prompt=None model='models/gemini-pro' temperature=0.1 max_tokens=2048 generate_kwargs={}!!!:]
+[2024-12-30 13:40:26,030: WARNING: _internal:  * Debugger is active!:]
+[2024-12-30 13:40:26,030: INFO: _internal:  * Debugger PIN: 111-846-815:]
+[2024-12-30 13:40:26,280: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 13:40:26,289: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 13:40:26,289: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 13:40:26,289: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 13:40:26,291: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 13:40:26,307: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 13:40:26] "GET /load_data?query=select%20top%20100%20*%20from%20Customer HTTP/1.1" 200 -:]
+[2024-12-30 13:40:26,326: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 13:40:26,331: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 13:40:26,332: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 13:40:26,332: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 13:40:26,333: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 13:40:26,355: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 13:40:26,360: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 13:40:26,361: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 13:40:26,361: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 13:40:26,361: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 13:40:26,387: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 13:40:26,394: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 13:40:26,395: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 13:40:26,395: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 13:40:26,395: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 13:40:26,429: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 13:40:26,437: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 13:40:26,438: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 13:40:26,438: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 13:40:26,438: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 13:45:27,464: INFO: _internal:  * Detected change in '/home/tanay/db_reader2/src/db_reader/preprocessing/preprocess.py', reloading:]
+[2024-12-30 13:45:30,983: INFO: _internal:  * Restarting with stat:]
+[2024-12-30 13:45:54,132: INFO: connection: Connection established:]
+[2024-12-30 13:45:55,210: INFO: connection: Connection established:]
+[2024-12-30 13:45:57,019: INFO: config: embed_model was NONE, setting it to <class 'llama_index.embeddings.huggingface.base.HuggingFaceEmbedding'>!!!:]
+[2024-12-30 13:45:57,021: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2:]
+[2024-12-30 13:46:01,106: INFO: SentenceTransformer: 2 prompts are loaded, with the keys: ['query', 'text']:]
+[2024-12-30 13:46:01,107: INFO: config: embed_model set to <class 'llama_index.embeddings.huggingface.base.HuggingFaceEmbedding'>!!!:]
+[2024-12-30 13:46:02,741: INFO: config: llm was NONE, setting it to callback_manager=<llama_index.core.callbacks.base.CallbackManager object at 0x70ee087edde0> system_prompt=None messages_to_prompt=<function messages_to_prompt at 0x70eeca609630> completion_to_prompt=<function default_completion_to_prompt at 0x70eeca4ece50> output_parser=None pydantic_program_mode=<PydanticProgramMode.DEFAULT: 'default'> query_wrapper_prompt=None model='models/gemini-pro' temperature=0.1 max_tokens=2048 generate_kwargs={}!!!:]
+[2024-12-30 13:46:04,381: INFO: config: llm set to Gemini!!!:]
+[2024-12-30 13:46:04,381: INFO: config: embed_model was not NONE, setting it to HuggingFaceEmbedding!!!:]
+[2024-12-30 13:46:04,381: INFO: config: llm was not NONE, setting it to callback_manager=<llama_index.core.callbacks.base.CallbackManager object at 0x70ee087edd50> system_prompt=None messages_to_prompt=<function messages_to_prompt at 0x70eeca609630> completion_to_prompt=<function default_completion_to_prompt at 0x70eeca4ece50> output_parser=None pydantic_program_mode=<PydanticProgramMode.DEFAULT: 'default'> query_wrapper_prompt=None model='models/gemini-pro' temperature=0.1 max_tokens=2048 generate_kwargs={}!!!:]
+[2024-12-30 13:46:04,405: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000:]
+[2024-12-30 13:46:04,405: INFO: _internal: [33mPress CTRL+C to quit[0m:]
+[2024-12-30 13:46:04,406: INFO: _internal:  * Restarting with stat:]
+[2024-12-30 13:46:14,012: INFO: connection: Connection established:]
+[2024-12-30 13:46:17,907: INFO: connection: Connection established:]
+[2024-12-30 13:46:23,236: INFO: config: embed_model was NONE, setting it to <class 'llama_index.embeddings.huggingface.base.HuggingFaceEmbedding'>!!!:]
+[2024-12-30 13:46:23,237: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2:]
+[2024-12-30 13:46:28,775: INFO: SentenceTransformer: 2 prompts are loaded, with the keys: ['query', 'text']:]
+[2024-12-30 13:46:28,775: INFO: config: embed_model set to <class 'llama_index.embeddings.huggingface.base.HuggingFaceEmbedding'>!!!:]
+[2024-12-30 13:46:30,785: INFO: config: llm was NONE, setting it to callback_manager=<llama_index.core.callbacks.base.CallbackManager object at 0x7530e0bf2830> system_prompt=None messages_to_prompt=<function messages_to_prompt at 0x7531a28795a0> completion_to_prompt=<function default_completion_to_prompt at 0x7531a295cca0> output_parser=None pydantic_program_mode=<PydanticProgramMode.DEFAULT: 'default'> query_wrapper_prompt=None model='models/gemini-pro' temperature=0.1 max_tokens=2048 generate_kwargs={}!!!:]
+[2024-12-30 13:46:32,663: INFO: config: llm set to Gemini!!!:]
+[2024-12-30 13:46:32,663: INFO: config: embed_model was not NONE, setting it to HuggingFaceEmbedding!!!:]
+[2024-12-30 13:46:32,663: INFO: config: llm was not NONE, setting it to callback_manager=<llama_index.core.callbacks.base.CallbackManager object at 0x7530e0bf2c50> system_prompt=None messages_to_prompt=<function messages_to_prompt at 0x7531a28795a0> completion_to_prompt=<function default_completion_to_prompt at 0x7531a295cca0> output_parser=None pydantic_program_mode=<PydanticProgramMode.DEFAULT: 'default'> query_wrapper_prompt=None model='models/gemini-pro' temperature=0.1 max_tokens=2048 generate_kwargs={}!!!:]
+[2024-12-30 13:46:32,677: WARNING: _internal:  * Debugger is active!:]
+[2024-12-30 13:46:32,678: INFO: _internal:  * Debugger PIN: 111-846-815:]
+[2024-12-30 13:46:32,765: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 13:46:32] "GET /chat HTTP/1.1" 200 -:]
+[2024-12-30 13:46:32,798: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 13:46:32] "GET /static/css/style.css HTTP/1.1" 200 -:]
+[2024-12-30 13:46:32,800: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 13:46:32] "GET /static/index.js HTTP/1.1" 200 -:]
+[2024-12-30 13:46:32,899: INFO: preprocess: 
+
+
+ Columns removed: ['CustomerId', 'Customer_PhoneNo_IsVerified', 'Customer_IsActive', 'Customer_CreateOn', 'Customer_CreateBy', 'Customer_ModifyOn', 'Customer_ModifyBy', 'Customer_IsFirm']
+
+
+:]
+[2024-12-30 13:46:32,906: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 13:46:32,913: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 13:46:32,914: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 13:46:32,914: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 13:46:32,915: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 13:46:32,922: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 13:46:32] "GET /load_data?query=select%20top%20100%20*%20from%20Customer HTTP/1.1" 200 -:]
+[2024-12-30 13:46:38,041: INFO: preprocess: 
+
+
+ Columns removed: ['CustomerId', 'Customer_PhoneNo_IsVerified', 'Customer_IsActive', 'Customer_CreateOn', 'Customer_CreateBy', 'Customer_ModifyOn', 'Customer_ModifyBy', 'Customer_IsFirm']
+
+
+:]
+[2024-12-30 13:46:38,047: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 13:46:38,054: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 13:46:38,054: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 13:46:38,055: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 13:46:38,055: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 13:46:38,062: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 13:46:38] "GET /load_data?query=select%20top%20100%20*%20from%20Customer HTTP/1.1" 200 -:]
+[2024-12-30 13:46:38,077: INFO: preprocess: 
+
+
+ Columns removed: ['CustomerId', 'Customer_PhoneNo_IsVerified', 'Customer_IsActive', 'Customer_CreateOn', 'Customer_CreateBy', 'Customer_ModifyOn', 'Customer_ModifyBy', 'Customer_IsFirm']
+
+
+:]
+[2024-12-30 13:46:38,087: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 13:46:38,094: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 13:46:38,095: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 13:46:38,095: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 13:46:38,095: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 13:46:38,114: INFO: preprocess: 
+
+
+ Columns removed: ['CustomerId', 'Customer_PhoneNo_IsVerified', 'Customer_IsActive', 'Customer_CreateOn', 'Customer_CreateBy', 'Customer_ModifyOn', 'Customer_ModifyBy', 'Customer_IsFirm']
+
+
+:]
+[2024-12-30 13:46:38,121: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 13:46:38,127: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 13:46:38,128: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 13:46:38,128: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 13:46:38,129: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 13:46:38,147: INFO: preprocess: 
+
+
+ Columns removed: ['CustomerId', 'Customer_PhoneNo_IsVerified', 'Customer_IsActive', 'Customer_CreateOn', 'Customer_CreateBy', 'Customer_ModifyOn', 'Customer_ModifyBy', 'Customer_IsFirm']
+
+
+:]
+[2024-12-30 13:46:38,155: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 13:46:38,161: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 13:46:38,161: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 13:46:38,162: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 13:46:38,162: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 13:46:38,182: INFO: preprocess: 
+
+
+ Columns removed: ['CustomerId', 'Customer_PhoneNo_IsVerified', 'Customer_IsActive', 'Customer_CreateOn', 'Customer_CreateBy', 'Customer_ModifyOn', 'Customer_ModifyBy', 'Customer_IsFirm']
+
+
+:]
+[2024-12-30 13:46:38,191: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 13:46:38,195: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 13:46:38,196: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 13:46:38,196: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 13:46:38,197: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 13:48:41,180: INFO: preprocess: 
+
+
+ Columns removed: ['CustomerId', 'Customer_PhoneNo_IsVerified', 'Customer_IsActive', 'Customer_CreateOn', 'Customer_CreateBy', 'Customer_ModifyOn', 'Customer_ModifyBy', 'Customer_IsFirm']
+
+
+:]
+[2024-12-30 13:48:41,186: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 13:48:41,191: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 13:48:41,191: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 13:48:41,191: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 13:48:41,192: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 13:48:41,198: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 13:48:41] "GET /load_data?query=select%20top%20100%20*%20from%20Customer HTTP/1.1" 200 -:]
+[2024-12-30 13:48:41,210: INFO: preprocess: 
+
+
+ Columns removed: ['CustomerId', 'Customer_PhoneNo_IsVerified', 'Customer_IsActive', 'Customer_CreateOn', 'Customer_CreateBy', 'Customer_ModifyOn', 'Customer_ModifyBy', 'Customer_IsFirm']
+
+
+:]
+[2024-12-30 13:48:41,218: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 13:48:41,222: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 13:48:41,223: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 13:48:41,223: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 13:48:41,223: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 13:48:41,240: INFO: preprocess: 
+
+
+ Columns removed: ['CustomerId', 'Customer_PhoneNo_IsVerified', 'Customer_IsActive', 'Customer_CreateOn', 'Customer_CreateBy', 'Customer_ModifyOn', 'Customer_ModifyBy', 'Customer_IsFirm']
+
+
+:]
+[2024-12-30 13:48:41,247: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 13:48:41,253: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 13:48:41,253: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 13:48:41,253: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 13:48:41,255: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 13:48:41,273: INFO: preprocess: 
+
+
+ Columns removed: ['CustomerId', 'Customer_PhoneNo_IsVerified', 'Customer_IsActive', 'Customer_CreateOn', 'Customer_CreateBy', 'Customer_ModifyOn', 'Customer_ModifyBy', 'Customer_IsFirm']
+
+
+:]
+[2024-12-30 13:48:41,280: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 13:48:41,286: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 13:48:41,286: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 13:48:41,286: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 13:48:41,287: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 13:48:41,304: INFO: preprocess: 
+
+
+ Columns removed: ['CustomerId', 'Customer_PhoneNo_IsVerified', 'Customer_IsActive', 'Customer_CreateOn', 'Customer_CreateBy', 'Customer_ModifyOn', 'Customer_ModifyBy', 'Customer_IsFirm']
+
+
+:]
+[2024-12-30 13:48:41,310: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 13:48:41,317: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 13:48:41,317: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 13:48:41,318: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 13:48:41,318: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 14:29:21,651: INFO: _internal:  * Detected change in '/home/tanay/db_reader2/src/db_reader/config/config.py', reloading:]
+[2024-12-30 14:29:24,809: INFO: _internal:  * Restarting with stat:]
+[2024-12-30 14:29:33,355: INFO: connection: Connection established:]
+[2024-12-30 14:29:35,199: INFO: connection: Connection established:]
+[2024-12-30 14:29:37,493: INFO: config: embed_model was NONE, setting it to HuggingFaceEmbedding!!!:]
+[2024-12-30 14:29:37,494: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2:]
+[2024-12-30 14:29:40,737: INFO: SentenceTransformer: 2 prompts are loaded, with the keys: ['query', 'text']:]
+[2024-12-30 14:29:40,738: INFO: config: embed_model set to HuggingFaceEmbedding!!!:]
+[2024-12-30 14:29:42,372: INFO: config: llm was NONE, setting it to callback_manager=<llama_index.core.callbacks.base.CallbackManager object at 0x7dc5271f68c0> system_prompt=None messages_to_prompt=<function messages_to_prompt at 0x7dc5e8ff5510> completion_to_prompt=<function default_completion_to_prompt at 0x7dc5e8ed8c10> output_parser=None pydantic_program_mode=<PydanticProgramMode.DEFAULT: 'default'> query_wrapper_prompt=None model='models/gemini-pro' temperature=0.1 max_tokens=2048 generate_kwargs={}!!!:]
+[2024-12-30 14:29:44,011: INFO: config: llm set to Gemini!!!:]
+[2024-12-30 14:29:44,011: INFO: config: embed_model was not NONE, setting it to HuggingFaceEmbedding!!!:]
+[2024-12-30 14:29:44,011: INFO: config: llm was not NONE, setting it to self.setting_config.llm!!!:]
+[2024-12-30 14:29:44,023: WARNING: _internal:  * Debugger is active!:]
+[2024-12-30 14:29:44,024: INFO: _internal:  * Debugger PIN: 111-846-815:]
+[2024-12-30 14:34:41,149: INFO: _internal:  * Detected change in '/home/tanay/db_reader2/src/db_reader/config/config.py', reloading:]
+[2024-12-30 14:34:44,452: INFO: _internal:  * Restarting with stat:]
+[2024-12-30 14:34:51,693: INFO: connection: Connection established:]
+[2024-12-30 14:34:52,312: INFO: connection: Connection established:]
+[2024-12-30 14:34:54,194: INFO: config: embed_model was NONE, setting it to HuggingFaceEmbedding!!!:]
+[2024-12-30 14:34:54,195: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2:]
+[2024-12-30 14:35:01,343: INFO: SentenceTransformer: 2 prompts are loaded, with the keys: ['query', 'text']:]
+[2024-12-30 14:35:01,343: INFO: config: embed_model set to HuggingFaceEmbedding!!!:]
+[2024-12-30 14:35:03,178: INFO: config: llm was NONE, setting it to callback_manager=<llama_index.core.callbacks.base.CallbackManager object at 0x7fd148ff6620> system_prompt=None messages_to_prompt=<function messages_to_prompt at 0x7fd20ae05750> completion_to_prompt=<function default_completion_to_prompt at 0x7fd20acecf70> output_parser=None pydantic_program_mode=<PydanticProgramMode.DEFAULT: 'default'> query_wrapper_prompt=None model='models/gemini-pro' temperature=0.1 max_tokens=2048 generate_kwargs={}!!!:]
+[2024-12-30 14:35:05,022: INFO: config: llm set to Gemini!!!:]
+[2024-12-30 14:35:05,022: INFO: config: embed_model was not NONE, setting it to HuggingFaceEmbedding!!!:]
+[2024-12-30 14:35:05,022: INFO: config: llm was not NONE, setting it to self.setting_config.llm!!!:]
+[2024-12-30 14:35:05,034: WARNING: _internal:  * Debugger is active!:]
+[2024-12-30 14:35:05,034: INFO: _internal:  * Debugger PIN: 111-846-815:]
+[2024-12-30 14:35:05,106: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 14:35:05] "GET /chat HTTP/1.1" 200 -:]
+[2024-12-30 14:35:05,109: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 14:35:05] "GET /chat HTTP/1.1" 200 -:]
+[2024-12-30 14:35:05,143: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 14:35:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -:]
+[2024-12-30 14:35:05,146: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 14:35:05] "[36mGET /static/index.js HTTP/1.1[0m" 304 -:]
+[2024-12-30 14:35:22,604: INFO: config: query_engine was NONE, setting it to NLSQLTableQueryEngine!!!:]
+[2024-12-30 14:35:22,605: INFO: config: query_engine set to NLSQLTableQueryEngine!!!:]
+[2024-12-30 14:44:14,777: INFO: _internal:  * Detected change in '/home/tanay/db_reader2/main.py', reloading:]
+[2024-12-30 14:44:17,999: INFO: _internal:  * Restarting with stat:]
+[2024-12-30 14:44:24,565: INFO: connection: Connection established:]
+[2024-12-30 14:44:25,376: INFO: connection: Connection established:]
+[2024-12-30 14:44:27,140: INFO: config: embed_model was NONE, setting it to HuggingFaceEmbedding!!!:]
+[2024-12-30 14:44:27,141: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2:]
+[2024-12-30 14:44:32,848: INFO: SentenceTransformer: 2 prompts are loaded, with the keys: ['query', 'text']:]
+[2024-12-30 14:44:32,849: INFO: config: embed_model set to HuggingFaceEmbedding!!!:]
+[2024-12-30 14:44:34,685: INFO: config: llm was NONE, setting it to callback_manager=<llama_index.core.callbacks.base.CallbackManager object at 0x7d242e3fea70> system_prompt=None messages_to_prompt=<function messages_to_prompt at 0x7d24f02bd750> completion_to_prompt=<function default_completion_to_prompt at 0x7d24f01a8f70> output_parser=None pydantic_program_mode=<PydanticProgramMode.DEFAULT: 'default'> query_wrapper_prompt=None model='models/gemini-pro' temperature=0.1 max_tokens=2048 generate_kwargs={}!!!:]
+[2024-12-30 14:44:36,328: INFO: config: llm set to Gemini!!!:]
+[2024-12-30 14:44:36,328: INFO: config: embed_model was not NONE, setting it to HuggingFaceEmbedding!!!:]
+[2024-12-30 14:44:36,328: INFO: config: llm was not NONE, setting it to self.setting_config.llm!!!:]
+[2024-12-30 14:44:36,343: WARNING: _internal:  * Debugger is active!:]
+[2024-12-30 14:44:36,344: INFO: _internal:  * Debugger PIN: 111-846-815:]
+[2024-12-30 14:48:59,886: INFO: _internal:  * Detected change in '/home/tanay/db_reader2/src/db_reader/nl_to_sql/nl_to_sql.py', reloading:]
+[2024-12-30 14:49:03,158: INFO: _internal:  * Restarting with stat:]
+[2024-12-30 14:49:09,854: INFO: connection: Connection established:]
+[2024-12-30 14:49:10,997: INFO: connection: Connection established:]
+[2024-12-30 15:19:06,176: INFO: connection: Connection established:]
+[2024-12-30 15:19:06,212: INFO: config: embed_model was NONE, setting it to HuggingFaceEmbedding!!!:]
+[2024-12-30 15:19:06,213: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2:]
+[2024-12-30 15:19:10,277: INFO: SentenceTransformer: 2 prompts are loaded, with the keys: ['query', 'text']:]
+[2024-12-30 15:19:10,277: INFO: config: embed_model set to HuggingFaceEmbedding!!!:]
+[2024-12-30 15:19:11,090: INFO: config: llm was NONE, setting it to callback_manager=<llama_index.core.callbacks.base.CallbackManager object at 0x728d50ce2200> system_prompt=None messages_to_prompt=<function messages_to_prompt at 0x728e126f5a20> completion_to_prompt=<function default_completion_to_prompt at 0x728e127ab1c0> output_parser=None pydantic_program_mode=<PydanticProgramMode.DEFAULT: 'default'> query_wrapper_prompt=None model='models/gemini-pro' temperature=0.1 max_tokens=2048 generate_kwargs={}!!!:]
+[2024-12-30 15:19:12,710: INFO: config: llm set to Gemini!!!:]
+[2024-12-30 15:19:12,710: INFO: config: embed_model was not NONE, setting it to HuggingFaceEmbedding!!!:]
+[2024-12-30 15:19:12,710: INFO: config: llm was not NONE, setting it to self.setting_config.llm!!!:]
+[2024-12-30 15:19:13,817: INFO: connection: Connection established:]
+[2024-12-30 15:19:14,692: INFO: nl_to_sql: query_engine was NONE, setting it to NLSQLTableQueryEngine!!!:]
+[2024-12-30 15:19:14,693: INFO: nl_to_sql: query_engine set to NLSQLTableQueryEngine!!!:]
+[2024-12-30 15:19:15,193: INFO: sql_retriever: > Table desc str: Table 'Customer' has columns: CustomerId (INTEGER), Customer_FirstName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_LastName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_FatherName (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Gender (CHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_DOB (DATE), Customer_ProfilePic (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_PhoneNo (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_PhoneNo1 (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_PhoneNo2 (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_WhatsAppNo (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_PhoneNo_IsVerified (BIT), Customer_Email (VARCHAR(150) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Website (VARCHAR(250) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Religion (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Cast (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_MaritalStatus (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_IsActive (BIT), Customer_CreateOn (DATETIME), Customer_CreateBy (INTEGER), Customer_ModifyOn (DATETIME), Customer_ModifyBy (INTEGER), Customer_IsFirm (BIT), Customer_FirmType (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Date_Of_Incorruptions (DATE), Customer_NoOfPartner (INTEGER), Customer_NoofEmployee (INTEGER), Customer_GrossValue (NUMERIC(18, 0)), Customer_Nature_Of_Business (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Relation (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Relation_FirstName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Relation_LastName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Occupation (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_CIN_Number (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS"), .
+
+Table 'LMS_Loan_Master' has columns: Loan_Id (INTEGER), Application_BranchId (INTEGER), Application_No (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS"), LoanAcNo (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_Status (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_InquiryNo (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_PrductId (INTEGER), Application_AssetCost (NUMERIC(18, 2)), Application_LoanAmount (NUMERIC(18, 2)), Application_LoanTenure (INTEGER), Application_LoanDuration_Month (INTEGER), Application_AdvInstl (INTEGER), Application_ManagementFee (NUMERIC(18, 2)), Application_DisbursementAmt (NUMERIC(18, 5)), Application_AgreementValue (NUMERIC(18, 5)), Application_InterestAmt (NUMERIC(18, 5)), Application_LTV (NUMERIC(18, 5)), Application_LoanEMIAmount (NUMERIC(18, 5)), Application_EMIType (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_LoanIRRate (NUMERIC(18, 10)), Application_IRR_Type (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_IRR_CalculateBy (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_Case_IRR (NUMERIC(18, 10)), Application_Disbursement_IRR (NUMERIC(18, 10)), Application_Loan_SchemeId (INTEGER), Application_LoanPurpose (VARCHAR(150) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_CreateOn (DATETIME), Application_CreateBy (INTEGER), Application_ApprovedLoanAmount (NUMERIC(18, 2)), Application_ApprovedLoanDouration_Month (INTEGER), Application_CreditApprovalNote (VARCHAR COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_ApproveDate (DATETIME), Application_TotalDeduction (NUMERIC(18, 2)), Application_Account_CustomerId (INTEGER), Application_ChequeAmount (NUMERIC(18, 2)), Application_ChequeNo (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_IRRate (NUMERIC(18, 10)), Application_BankName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_BankBranch (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_IFSCCode (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_AccountNo (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_AccountHolderName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_ChqueDate (DATE), Application_EMIAmount (NUMERIC(18, 2)), Application_EMIMonthDay (INTEGER), Application_FirstEMIDate (DATE), Application_ExpiryDate (DATE), Application_ModifyBy (INTEGER), Application_ModifyOn (DATETIME), Loan_Date (DATETIME), IsActive (INTEGER), LoanAccountingId (INTEGER), LoanCreatedBy (INTEGER), SourceType (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS"), BranchHead (INTEGER), LeadSourceName (INTEGER), CollectionArea (INTEGER), SalesExecutive (INTEGER), CollectionSubarea (INTEGER), SourceArea (INTEGER), CollectionExecutive (INTEGER), LeadReference (VARCHAR(200) COLLATE "SQL_Latin1_General_CP1_CI_AS"), IsLoanInfo (INTEGER), IsCustomerInfo (INTEGER), IsAccountInfo (INTEGER), IsAssetInfo (INTEGER), IsCrcInfo (INTEGER), IsFiTvrInfo (INTEGER), IsChequeDetailInfo (INTEGER), IsInsuranceInfo (INTEGER), IsRepaymentScheduleInfo (INTEGER), IsDvReportInfo (INTEGER), IsAmortizationInfos (INTEGER), IsNoteRecommendation (INTEGER), IsAttachment (INTEGER), IsLoanNo (INTEGER), LOS_ApplicationId (INTEGER), LoanCreatedOn (DATETIME), LoanClosed_Date (DATETIME), LoanClosed_By (INTEGER), SuitFiled (INTEGER), WriteOff_Settled_Status (INTEGER), Financial_CreatedBy (INTEGER), Financial_CreatedOn (DATETIME), Financial_ModifyBy (INTEGER), Financial_ModifyOn (DATETIME), .:]
+[2024-12-30 15:19:25,842: INFO: nl_to_sql: Query engine working fine!!!:]
+[2024-12-30 15:19:25,842: INFO: nl_to_sql: 
+
+
+ Response: | Customer_FirstName | Customer_LastName | Customer_PhoneNo |
+|---|---|---|
+| John | Doe | 555-1212 |
+| Jane | Smith | 555-1213 |
+| Michael | Jones | 555-1214 |
+
+
+:]
+[2024-12-30 15:19:25,842: INFO: nl_to_sql: 
+
+
+ SQL Query generated: SELECT
+  Customer_FirstName,
+  Customer_LastName,
+  Customer_PhoneNo
+FROM Customer;
+
+
+:]
+[2024-12-30 15:31:23,772: INFO: connection: Connection established:]
+[2024-12-30 15:31:23,811: INFO: config: embed_model was NONE, setting it to HuggingFaceEmbedding!!!:]
+[2024-12-30 15:31:23,812: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2:]
+[2024-12-30 15:31:28,073: INFO: SentenceTransformer: 2 prompts are loaded, with the keys: ['query', 'text']:]
+[2024-12-30 15:31:28,074: INFO: config: embed_model set to HuggingFaceEmbedding!!!:]
+[2024-12-30 15:31:29,912: INFO: config: llm was NONE, setting it to callback_manager=<llama_index.core.callbacks.base.CallbackManager object at 0x7677bcdba050> system_prompt=None messages_to_prompt=<function messages_to_prompt at 0x76787e801990> completion_to_prompt=<function default_completion_to_prompt at 0x76787e6e6ef0> output_parser=None pydantic_program_mode=<PydanticProgramMode.DEFAULT: 'default'> query_wrapper_prompt=None model='models/gemini-pro' temperature=0.1 max_tokens=2048 generate_kwargs={}!!!:]
+[2024-12-30 15:31:31,549: INFO: config: llm set to Gemini!!!:]
+[2024-12-30 15:31:31,549: INFO: config: embed_model was not NONE, setting it to HuggingFaceEmbedding!!!:]
+[2024-12-30 15:31:31,549: INFO: config: llm was not NONE, setting it to self.setting_config.llm!!!:]
+[2024-12-30 15:31:32,049: INFO: connection: Connection established:]
+[2024-12-30 15:31:33,590: INFO: sql_retriever: > Table desc str: Table 'Customer' has columns: CustomerId (INTEGER), Customer_FirstName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_LastName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_FatherName (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Gender (CHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_DOB (DATE), Customer_ProfilePic (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_PhoneNo (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_PhoneNo1 (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_PhoneNo2 (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_WhatsAppNo (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_PhoneNo_IsVerified (BIT), Customer_Email (VARCHAR(150) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Website (VARCHAR(250) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Religion (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Cast (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_MaritalStatus (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_IsActive (BIT), Customer_CreateOn (DATETIME), Customer_CreateBy (INTEGER), Customer_ModifyOn (DATETIME), Customer_ModifyBy (INTEGER), Customer_IsFirm (BIT), Customer_FirmType (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Date_Of_Incorruptions (DATE), Customer_NoOfPartner (INTEGER), Customer_NoofEmployee (INTEGER), Customer_GrossValue (NUMERIC(18, 0)), Customer_Nature_Of_Business (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Relation (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Relation_FirstName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Relation_LastName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Occupation (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_CIN_Number (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS"), .
+
+Table 'LMS_Loan_Master' has columns: Loan_Id (INTEGER), Application_BranchId (INTEGER), Application_No (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS"), LoanAcNo (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_Status (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_InquiryNo (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_PrductId (INTEGER), Application_AssetCost (NUMERIC(18, 2)), Application_LoanAmount (NUMERIC(18, 2)), Application_LoanTenure (INTEGER), Application_LoanDuration_Month (INTEGER), Application_AdvInstl (INTEGER), Application_ManagementFee (NUMERIC(18, 2)), Application_DisbursementAmt (NUMERIC(18, 5)), Application_AgreementValue (NUMERIC(18, 5)), Application_InterestAmt (NUMERIC(18, 5)), Application_LTV (NUMERIC(18, 5)), Application_LoanEMIAmount (NUMERIC(18, 5)), Application_EMIType (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_LoanIRRate (NUMERIC(18, 10)), Application_IRR_Type (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_IRR_CalculateBy (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_Case_IRR (NUMERIC(18, 10)), Application_Disbursement_IRR (NUMERIC(18, 10)), Application_Loan_SchemeId (INTEGER), Application_LoanPurpose (VARCHAR(150) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_CreateOn (DATETIME), Application_CreateBy (INTEGER), Application_ApprovedLoanAmount (NUMERIC(18, 2)), Application_ApprovedLoanDouration_Month (INTEGER), Application_CreditApprovalNote (VARCHAR COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_ApproveDate (DATETIME), Application_TotalDeduction (NUMERIC(18, 2)), Application_Account_CustomerId (INTEGER), Application_ChequeAmount (NUMERIC(18, 2)), Application_ChequeNo (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_IRRate (NUMERIC(18, 10)), Application_BankName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_BankBranch (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_IFSCCode (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_AccountNo (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_AccountHolderName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_ChqueDate (DATE), Application_EMIAmount (NUMERIC(18, 2)), Application_EMIMonthDay (INTEGER), Application_FirstEMIDate (DATE), Application_ExpiryDate (DATE), Application_ModifyBy (INTEGER), Application_ModifyOn (DATETIME), Loan_Date (DATETIME), IsActive (INTEGER), LoanAccountingId (INTEGER), LoanCreatedBy (INTEGER), SourceType (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS"), BranchHead (INTEGER), LeadSourceName (INTEGER), CollectionArea (INTEGER), SalesExecutive (INTEGER), CollectionSubarea (INTEGER), SourceArea (INTEGER), CollectionExecutive (INTEGER), LeadReference (VARCHAR(200) COLLATE "SQL_Latin1_General_CP1_CI_AS"), IsLoanInfo (INTEGER), IsCustomerInfo (INTEGER), IsAccountInfo (INTEGER), IsAssetInfo (INTEGER), IsCrcInfo (INTEGER), IsFiTvrInfo (INTEGER), IsChequeDetailInfo (INTEGER), IsInsuranceInfo (INTEGER), IsRepaymentScheduleInfo (INTEGER), IsDvReportInfo (INTEGER), IsAmortizationInfos (INTEGER), IsNoteRecommendation (INTEGER), IsAttachment (INTEGER), IsLoanNo (INTEGER), LOS_ApplicationId (INTEGER), LoanCreatedOn (DATETIME), LoanClosed_Date (DATETIME), LoanClosed_By (INTEGER), SuitFiled (INTEGER), WriteOff_Settled_Status (INTEGER), Financial_CreatedBy (INTEGER), Financial_CreatedOn (DATETIME), Financial_ModifyBy (INTEGER), Financial_ModifyOn (DATETIME), .:]
+[2024-12-30 15:31:38,512: INFO: sql_retriever: > Table desc str: Table 'Customer' has columns: CustomerId (INTEGER), Customer_FirstName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_LastName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_FatherName (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Gender (CHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_DOB (DATE), Customer_ProfilePic (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_PhoneNo (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_PhoneNo1 (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_PhoneNo2 (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_WhatsAppNo (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_PhoneNo_IsVerified (BIT), Customer_Email (VARCHAR(150) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Website (VARCHAR(250) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Religion (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Cast (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_MaritalStatus (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_IsActive (BIT), Customer_CreateOn (DATETIME), Customer_CreateBy (INTEGER), Customer_ModifyOn (DATETIME), Customer_ModifyBy (INTEGER), Customer_IsFirm (BIT), Customer_FirmType (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Date_Of_Incorruptions (DATE), Customer_NoOfPartner (INTEGER), Customer_NoofEmployee (INTEGER), Customer_GrossValue (NUMERIC(18, 0)), Customer_Nature_Of_Business (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Relation (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Relation_FirstName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Relation_LastName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Occupation (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_CIN_Number (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS"), .
+
+Table 'LMS_Loan_Master' has columns: Loan_Id (INTEGER), Application_BranchId (INTEGER), Application_No (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS"), LoanAcNo (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_Status (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_InquiryNo (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_PrductId (INTEGER), Application_AssetCost (NUMERIC(18, 2)), Application_LoanAmount (NUMERIC(18, 2)), Application_LoanTenure (INTEGER), Application_LoanDuration_Month (INTEGER), Application_AdvInstl (INTEGER), Application_ManagementFee (NUMERIC(18, 2)), Application_DisbursementAmt (NUMERIC(18, 5)), Application_AgreementValue (NUMERIC(18, 5)), Application_InterestAmt (NUMERIC(18, 5)), Application_LTV (NUMERIC(18, 5)), Application_LoanEMIAmount (NUMERIC(18, 5)), Application_EMIType (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_LoanIRRate (NUMERIC(18, 10)), Application_IRR_Type (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_IRR_CalculateBy (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_Case_IRR (NUMERIC(18, 10)), Application_Disbursement_IRR (NUMERIC(18, 10)), Application_Loan_SchemeId (INTEGER), Application_LoanPurpose (VARCHAR(150) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_CreateOn (DATETIME), Application_CreateBy (INTEGER), Application_ApprovedLoanAmount (NUMERIC(18, 2)), Application_ApprovedLoanDouration_Month (INTEGER), Application_CreditApprovalNote (VARCHAR COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_ApproveDate (DATETIME), Application_TotalDeduction (NUMERIC(18, 2)), Application_Account_CustomerId (INTEGER), Application_ChequeAmount (NUMERIC(18, 2)), Application_ChequeNo (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_IRRate (NUMERIC(18, 10)), Application_BankName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_BankBranch (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_IFSCCode (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_AccountNo (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_AccountHolderName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_ChqueDate (DATE), Application_EMIAmount (NUMERIC(18, 2)), Application_EMIMonthDay (INTEGER), Application_FirstEMIDate (DATE), Application_ExpiryDate (DATE), Application_ModifyBy (INTEGER), Application_ModifyOn (DATETIME), Loan_Date (DATETIME), IsActive (INTEGER), LoanAccountingId (INTEGER), LoanCreatedBy (INTEGER), SourceType (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS"), BranchHead (INTEGER), LeadSourceName (INTEGER), CollectionArea (INTEGER), SalesExecutive (INTEGER), CollectionSubarea (INTEGER), SourceArea (INTEGER), CollectionExecutive (INTEGER), LeadReference (VARCHAR(200) COLLATE "SQL_Latin1_General_CP1_CI_AS"), IsLoanInfo (INTEGER), IsCustomerInfo (INTEGER), IsAccountInfo (INTEGER), IsAssetInfo (INTEGER), IsCrcInfo (INTEGER), IsFiTvrInfo (INTEGER), IsChequeDetailInfo (INTEGER), IsInsuranceInfo (INTEGER), IsRepaymentScheduleInfo (INTEGER), IsDvReportInfo (INTEGER), IsAmortizationInfos (INTEGER), IsNoteRecommendation (INTEGER), IsAttachment (INTEGER), IsLoanNo (INTEGER), LOS_ApplicationId (INTEGER), LoanCreatedOn (DATETIME), LoanClosed_Date (DATETIME), LoanClosed_By (INTEGER), SuitFiled (INTEGER), WriteOff_Settled_Status (INTEGER), Financial_CreatedBy (INTEGER), Financial_CreatedOn (DATETIME), Financial_ModifyBy (INTEGER), Financial_ModifyOn (DATETIME), .:]
+[2024-12-30 15:33:32,045: INFO: connection: Connection established:]
+[2024-12-30 15:35:20,408: INFO: connection: Connection established:]
+[2024-12-30 15:35:20,612: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2:]
+[2024-12-30 15:35:24,929: INFO: SentenceTransformer: 2 prompts are loaded, with the keys: ['query', 'text']:]
+[2024-12-30 15:35:26,770: INFO: config: embed_model was not NONE, setting it to HuggingFaceEmbedding!!!:]
+[2024-12-30 15:35:26,770: INFO: config: llm was not NONE, setting it to self.setting_config.llm!!!:]
+[2024-12-30 15:35:26,770: INFO: config: embed_model was not NONE, setting it to HuggingFaceEmbedding!!!:]
+[2024-12-30 15:35:26,770: INFO: config: llm was not NONE, setting it to self.setting_config.llm!!!:]
+[2024-12-30 15:35:27,999: INFO: connection: Connection established:]
+[2024-12-30 15:35:32,140: INFO: sql_retriever: > Table desc str: Table 'Customer' has columns: CustomerId (INTEGER), Customer_FirstName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_LastName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_FatherName (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Gender (CHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_DOB (DATE), Customer_ProfilePic (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_PhoneNo (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_PhoneNo1 (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_PhoneNo2 (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_WhatsAppNo (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_PhoneNo_IsVerified (BIT), Customer_Email (VARCHAR(150) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Website (VARCHAR(250) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Religion (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Cast (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_MaritalStatus (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_IsActive (BIT), Customer_CreateOn (DATETIME), Customer_CreateBy (INTEGER), Customer_ModifyOn (DATETIME), Customer_ModifyBy (INTEGER), Customer_IsFirm (BIT), Customer_FirmType (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Date_Of_Incorruptions (DATE), Customer_NoOfPartner (INTEGER), Customer_NoofEmployee (INTEGER), Customer_GrossValue (NUMERIC(18, 0)), Customer_Nature_Of_Business (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Relation (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Relation_FirstName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Relation_LastName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Occupation (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_CIN_Number (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS"), .
+
+Table 'LMS_Loan_Master' has columns: Loan_Id (INTEGER), Application_BranchId (INTEGER), Application_No (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS"), LoanAcNo (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_Status (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_InquiryNo (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_PrductId (INTEGER), Application_AssetCost (NUMERIC(18, 2)), Application_LoanAmount (NUMERIC(18, 2)), Application_LoanTenure (INTEGER), Application_LoanDuration_Month (INTEGER), Application_AdvInstl (INTEGER), Application_ManagementFee (NUMERIC(18, 2)), Application_DisbursementAmt (NUMERIC(18, 5)), Application_AgreementValue (NUMERIC(18, 5)), Application_InterestAmt (NUMERIC(18, 5)), Application_LTV (NUMERIC(18, 5)), Application_LoanEMIAmount (NUMERIC(18, 5)), Application_EMIType (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_LoanIRRate (NUMERIC(18, 10)), Application_IRR_Type (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_IRR_CalculateBy (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_Case_IRR (NUMERIC(18, 10)), Application_Disbursement_IRR (NUMERIC(18, 10)), Application_Loan_SchemeId (INTEGER), Application_LoanPurpose (VARCHAR(150) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_CreateOn (DATETIME), Application_CreateBy (INTEGER), Application_ApprovedLoanAmount (NUMERIC(18, 2)), Application_ApprovedLoanDouration_Month (INTEGER), Application_CreditApprovalNote (VARCHAR COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_ApproveDate (DATETIME), Application_TotalDeduction (NUMERIC(18, 2)), Application_Account_CustomerId (INTEGER), Application_ChequeAmount (NUMERIC(18, 2)), Application_ChequeNo (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_IRRate (NUMERIC(18, 10)), Application_BankName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_BankBranch (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_IFSCCode (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_AccountNo (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_AccountHolderName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_ChqueDate (DATE), Application_EMIAmount (NUMERIC(18, 2)), Application_EMIMonthDay (INTEGER), Application_FirstEMIDate (DATE), Application_ExpiryDate (DATE), Application_ModifyBy (INTEGER), Application_ModifyOn (DATETIME), Loan_Date (DATETIME), IsActive (INTEGER), LoanAccountingId (INTEGER), LoanCreatedBy (INTEGER), SourceType (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS"), BranchHead (INTEGER), LeadSourceName (INTEGER), CollectionArea (INTEGER), SalesExecutive (INTEGER), CollectionSubarea (INTEGER), SourceArea (INTEGER), CollectionExecutive (INTEGER), LeadReference (VARCHAR(200) COLLATE "SQL_Latin1_General_CP1_CI_AS"), IsLoanInfo (INTEGER), IsCustomerInfo (INTEGER), IsAccountInfo (INTEGER), IsAssetInfo (INTEGER), IsCrcInfo (INTEGER), IsFiTvrInfo (INTEGER), IsChequeDetailInfo (INTEGER), IsInsuranceInfo (INTEGER), IsRepaymentScheduleInfo (INTEGER), IsDvReportInfo (INTEGER), IsAmortizationInfos (INTEGER), IsNoteRecommendation (INTEGER), IsAttachment (INTEGER), IsLoanNo (INTEGER), LOS_ApplicationId (INTEGER), LoanCreatedOn (DATETIME), LoanClosed_Date (DATETIME), LoanClosed_By (INTEGER), SuitFiled (INTEGER), WriteOff_Settled_Status (INTEGER), Financial_CreatedBy (INTEGER), Financial_CreatedOn (DATETIME), Financial_ModifyBy (INTEGER), Financial_ModifyOn (DATETIME), .:]
+[2024-12-30 15:49:54,083: INFO: connection: Connection established:]
+[2024-12-30 15:49:54,118: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2:]
+[2024-12-30 15:49:59,458: INFO: SentenceTransformer: 2 prompts are loaded, with the keys: ['query', 'text']:]
+[2024-12-30 15:50:01,261: INFO: config: embed_model was not NONE, setting it to HuggingFaceEmbedding!!!:]
+[2024-12-30 15:50:01,262: INFO: config: llm was not NONE, setting it to self.setting_config.llm!!!:]
+[2024-12-30 15:50:01,262: INFO: config: embed_model was not NONE, setting it to HuggingFaceEmbedding!!!:]
+[2024-12-30 15:50:01,262: INFO: config: llm was not NONE, setting it to self.setting_config.llm!!!:]
+[2024-12-30 15:51:47,308: INFO: connection: Connection established:]
+[2024-12-30 15:51:47,493: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2:]
+[2024-12-30 15:52:18,166: INFO: connection: Connection established:]
+[2024-12-30 15:52:18,203: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2:]
+[2024-12-30 15:52:21,864: INFO: SentenceTransformer: 2 prompts are loaded, with the keys: ['query', 'text']:]
+[2024-12-30 15:52:23,460: INFO: config: embed_model was not NONE, setting it to HuggingFaceEmbedding!!!:]
+[2024-12-30 15:52:23,461: INFO: config: llm was not NONE, setting it to self.setting_config.llm!!!:]
+[2024-12-30 15:52:23,461: INFO: config: embed_model was not NONE, setting it to HuggingFaceEmbedding!!!:]
+[2024-12-30 15:52:23,461: INFO: config: llm was not NONE, setting it to self.setting_config.llm!!!:]
+[2024-12-30 15:56:01,667: INFO: connection: Connection established:]
+[2024-12-30 15:56:01,739: INFO: config: setting config embed:]
+[2024-12-30 15:56:01,740: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2:]
+[2024-12-30 15:56:06,167: INFO: SentenceTransformer: 2 prompts are loaded, with the keys: ['query', 'text']:]
+[2024-12-30 15:56:06,168: INFO: config: setting config llm:]
+[2024-12-30 15:56:07,961: INFO: config: embed_model was not NONE, setting it to HuggingFaceEmbedding!!!:]
+[2024-12-30 15:56:07,961: INFO: config: llm was not NONE, setting it to self.setting_config.llm!!!:]
+[2024-12-30 15:56:07,961: INFO: config: embed_model was not NONE, setting it to HuggingFaceEmbedding!!!:]
+[2024-12-30 15:56:07,961: INFO: config: llm was not NONE, setting it to self.setting_config.llm!!!:]
+[2024-12-30 16:18:41,807: INFO: connection: Connection established:]
+[2024-12-30 16:18:41,865: INFO: config: setting config embed:]
+[2024-12-30 16:18:41,867: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2:]
+[2024-12-30 16:18:46,435: INFO: SentenceTransformer: 2 prompts are loaded, with the keys: ['query', 'text']:]
+[2024-12-30 16:18:46,435: INFO: config: setting config llm:]
+[2024-12-30 16:20:32,143: INFO: connection: Connection established:]
+[2024-12-30 16:20:32,176: INFO: config: setting config embed:]
+[2024-12-30 16:20:32,177: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2:]
+[2024-12-30 16:20:36,422: INFO: SentenceTransformer: 2 prompts are loaded, with the keys: ['query', 'text']:]
+[2024-12-30 16:20:36,423: INFO: config: setting config llm:]
+[2024-12-30 16:20:38,271: INFO: config: embed_model was not NONE, setting it to HuggingFaceEmbedding!!!:]
+[2024-12-30 16:20:38,271: INFO: config: llm was not NONE, setting it to self.setting_config.llm!!!:]
+[2024-12-30 16:20:38,271: INFO: config: embed_model was not NONE, setting it to HuggingFaceEmbedding!!!:]
+[2024-12-30 16:20:38,271: INFO: config: llm was not NONE, setting it to self.setting_config.llm!!!:]
+[2024-12-30 16:23:01,245: INFO: connection: Connection established:]
+[2024-12-30 16:23:01,284: INFO: config: setting config embed:]
+[2024-12-30 16:23:01,285: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2:]
+[2024-12-30 16:23:05,747: INFO: SentenceTransformer: 2 prompts are loaded, with the keys: ['query', 'text']:]
+[2024-12-30 16:23:05,748: INFO: config: setting config llm:]
+[2024-12-30 16:23:07,284: INFO: config: embed_model was not NONE, setting it to HuggingFaceEmbedding!!!:]
+[2024-12-30 16:23:07,284: INFO: config: llm was not NONE, setting it to self.setting_config.llm!!!:]
+[2024-12-30 16:23:07,284: INFO: config: embed_model was not NONE, setting it to HuggingFaceEmbedding!!!:]
+[2024-12-30 16:23:07,284: INFO: config: llm was not NONE, setting it to self.setting_config.llm!!!:]
+[2024-12-30 16:23:07,679: INFO: connection: Connection established:]
+[2024-12-30 16:23:10,707: INFO: connection: Connection established:]
+[2024-12-30 16:23:10,871: INFO: config: setting config embed:]
+[2024-12-30 16:23:10,872: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2:]
+[2024-12-30 16:23:15,390: INFO: SentenceTransformer: 2 prompts are loaded, with the keys: ['query', 'text']:]
+[2024-12-30 16:23:15,390: INFO: config: setting config llm:]
+[2024-12-30 16:23:17,248: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000:]
+[2024-12-30 16:23:17,249: INFO: _internal: [33mPress CTRL+C to quit[0m:]
+[2024-12-30 16:23:17,250: INFO: _internal:  * Restarting with stat:]
+[2024-12-30 16:23:26,945: INFO: connection: Connection established:]
+[2024-12-30 16:23:26,984: INFO: config: setting config embed:]
+[2024-12-30 16:23:26,986: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2:]
+[2024-12-30 16:23:31,367: INFO: SentenceTransformer: 2 prompts are loaded, with the keys: ['query', 'text']:]
+[2024-12-30 16:23:31,368: INFO: config: setting config llm:]
+[2024-12-30 16:23:33,203: INFO: config: embed_model was not NONE, setting it to HuggingFaceEmbedding!!!:]
+[2024-12-30 16:23:33,203: INFO: config: llm was not NONE, setting it to self.setting_config.llm!!!:]
+[2024-12-30 16:23:33,204: INFO: config: embed_model was not NONE, setting it to HuggingFaceEmbedding!!!:]
+[2024-12-30 16:23:33,204: INFO: config: llm was not NONE, setting it to self.setting_config.llm!!!:]
+[2024-12-30 16:23:34,261: INFO: connection: Connection established:]
+[2024-12-30 16:23:37,145: INFO: connection: Connection established:]
+[2024-12-30 16:23:37,181: INFO: config: setting config embed:]
+[2024-12-30 16:23:37,182: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2:]
+[2024-12-30 16:23:41,609: INFO: SentenceTransformer: 2 prompts are loaded, with the keys: ['query', 'text']:]
+[2024-12-30 16:23:41,610: INFO: config: setting config llm:]
+[2024-12-30 16:23:43,260: WARNING: _internal:  * Debugger is active!:]
+[2024-12-30 16:23:43,261: INFO: _internal:  * Debugger PIN: 111-846-815:]
+[2024-12-30 16:23:43,394: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:23:43] "GET /chat HTTP/1.1" 200 -:]
+[2024-12-30 16:23:43,396: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:23:43] "GET /chat HTTP/1.1" 200 -:]
+[2024-12-30 16:23:43,445: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:23:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -:]
+[2024-12-30 16:23:43,449: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:23:43] "[36mGET /static/index.js HTTP/1.1[0m" 304 -:]
+[2024-12-30 16:23:45,959: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:23:45] "GET /chat HTTP/1.1" 200 -:]
+[2024-12-30 16:23:46,056: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:23:46] "[36mGET /static/index.js HTTP/1.1[0m" 304 -:]
+[2024-12-30 16:23:46,059: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:23:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -:]
+[2024-12-30 16:23:53,623: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:23:53] "GET /chat HTTP/1.1" 200 -:]
+[2024-12-30 16:23:53,727: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:23:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -:]
+[2024-12-30 16:23:53,729: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:23:53] "[36mGET /static/index.js HTTP/1.1[0m" 304 -:]
+[2024-12-30 16:24:24,623: INFO: nl_to_sql: query_engine was NONE, setting it to NLSQLTableQueryEngine!!!:]
+[2024-12-30 16:24:24,624: INFO: nl_to_sql: query_engine set to NLSQLTableQueryEngine!!!:]
+[2024-12-30 16:24:27,276: INFO: sql_retriever: > Table desc str: Table 'Customer' has columns: CustomerId (INTEGER), Customer_FirstName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_LastName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_FatherName (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Gender (CHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_DOB (DATE), Customer_ProfilePic (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_PhoneNo (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_PhoneNo1 (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_PhoneNo2 (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_WhatsAppNo (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_PhoneNo_IsVerified (BIT), Customer_Email (VARCHAR(150) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Website (VARCHAR(250) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Religion (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Cast (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_MaritalStatus (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_IsActive (BIT), Customer_CreateOn (DATETIME), Customer_CreateBy (INTEGER), Customer_ModifyOn (DATETIME), Customer_ModifyBy (INTEGER), Customer_IsFirm (BIT), Customer_FirmType (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Date_Of_Incorruptions (DATE), Customer_NoOfPartner (INTEGER), Customer_NoofEmployee (INTEGER), Customer_GrossValue (NUMERIC(18, 0)), Customer_Nature_Of_Business (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Relation (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Relation_FirstName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Relation_LastName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Occupation (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_CIN_Number (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS"), .
+
+Table 'LMS_Loan_Master' has columns: Loan_Id (INTEGER), Application_BranchId (INTEGER), Application_No (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS"), LoanAcNo (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_Status (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_InquiryNo (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_PrductId (INTEGER), Application_AssetCost (NUMERIC(18, 2)), Application_LoanAmount (NUMERIC(18, 2)), Application_LoanTenure (INTEGER), Application_LoanDuration_Month (INTEGER), Application_AdvInstl (INTEGER), Application_ManagementFee (NUMERIC(18, 2)), Application_DisbursementAmt (NUMERIC(18, 5)), Application_AgreementValue (NUMERIC(18, 5)), Application_InterestAmt (NUMERIC(18, 5)), Application_LTV (NUMERIC(18, 5)), Application_LoanEMIAmount (NUMERIC(18, 5)), Application_EMIType (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_LoanIRRate (NUMERIC(18, 10)), Application_IRR_Type (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_IRR_CalculateBy (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_Case_IRR (NUMERIC(18, 10)), Application_Disbursement_IRR (NUMERIC(18, 10)), Application_Loan_SchemeId (INTEGER), Application_LoanPurpose (VARCHAR(150) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_CreateOn (DATETIME), Application_CreateBy (INTEGER), Application_ApprovedLoanAmount (NUMERIC(18, 2)), Application_ApprovedLoanDouration_Month (INTEGER), Application_CreditApprovalNote (VARCHAR COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_ApproveDate (DATETIME), Application_TotalDeduction (NUMERIC(18, 2)), Application_Account_CustomerId (INTEGER), Application_ChequeAmount (NUMERIC(18, 2)), Application_ChequeNo (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_IRRate (NUMERIC(18, 10)), Application_BankName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_BankBranch (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_IFSCCode (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_AccountNo (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_AccountHolderName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_ChqueDate (DATE), Application_EMIAmount (NUMERIC(18, 2)), Application_EMIMonthDay (INTEGER), Application_FirstEMIDate (DATE), Application_ExpiryDate (DATE), Application_ModifyBy (INTEGER), Application_ModifyOn (DATETIME), Loan_Date (DATETIME), IsActive (INTEGER), LoanAccountingId (INTEGER), LoanCreatedBy (INTEGER), SourceType (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS"), BranchHead (INTEGER), LeadSourceName (INTEGER), CollectionArea (INTEGER), SalesExecutive (INTEGER), CollectionSubarea (INTEGER), SourceArea (INTEGER), CollectionExecutive (INTEGER), LeadReference (VARCHAR(200) COLLATE "SQL_Latin1_General_CP1_CI_AS"), IsLoanInfo (INTEGER), IsCustomerInfo (INTEGER), IsAccountInfo (INTEGER), IsAssetInfo (INTEGER), IsCrcInfo (INTEGER), IsFiTvrInfo (INTEGER), IsChequeDetailInfo (INTEGER), IsInsuranceInfo (INTEGER), IsRepaymentScheduleInfo (INTEGER), IsDvReportInfo (INTEGER), IsAmortizationInfos (INTEGER), IsNoteRecommendation (INTEGER), IsAttachment (INTEGER), IsLoanNo (INTEGER), LOS_ApplicationId (INTEGER), LoanCreatedOn (DATETIME), LoanClosed_Date (DATETIME), LoanClosed_By (INTEGER), SuitFiled (INTEGER), WriteOff_Settled_Status (INTEGER), Financial_CreatedBy (INTEGER), Financial_CreatedOn (DATETIME), Financial_ModifyBy (INTEGER), Financial_ModifyOn (DATETIME), .:]
+[2024-12-30 16:24:34,124: INFO: nl_to_sql: Query engine working fine!!!:]
+[2024-12-30 16:24:34,124: INFO: nl_to_sql: 
+
+
+ Response: | Customer_FirstName |
+|---|---|
+| John |
+| Jane |
+| Mary |
+| Bob |
+| Alice |
+
+
+:]
+[2024-12-30 16:24:34,124: INFO: nl_to_sql: 
+
+
+ SQL Query generated: SELECT
+  Customer_FirstName
+FROM Customer;
+
+
+:]
+[2024-12-30 16:24:34,125: INFO: main: 
+
+ SQL Query generated: SELECT
+  Customer_FirstName
+FROM Customer;
+
+:]
+[2024-12-30 16:24:34,353: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:34,358: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:34,370: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:34,371: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:34,372: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:34,374: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:34,379: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:24:34] "GET /load_data?query=show%20customer%20first%20names HTTP/1.1" 200 -:]
+[2024-12-30 16:24:34,383: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:34,388: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:34,398: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:34,398: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:34,399: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:34,400: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:34,409: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:34,414: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:34,422: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:34,423: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:34,423: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:34,424: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:34,431: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:34,436: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:34,446: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:34,446: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:34,447: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:34,449: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:34,455: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:34,461: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:34,469: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:34,469: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:34,469: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:34,471: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:34,478: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:34,482: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:34,489: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:34,491: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:34,491: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:34,492: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:34,497: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:34,501: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:34,509: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:34,510: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:34,510: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:34,511: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:34,517: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:34,521: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:34,528: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:34,529: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:34,529: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:34,530: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:34,536: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:34,541: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:34,546: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:34,547: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:34,547: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:34,548: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:34,554: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:34,559: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:34,566: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:34,566: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:34,567: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:34,567: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:34,572: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:34,577: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:34,583: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:34,583: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:34,583: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:34,584: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:34,589: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:34,594: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:34,600: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:34,601: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:34,602: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:34,602: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:34,608: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:34,613: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:34,619: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:34,619: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:34,619: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:34,620: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:34,626: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:34,630: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:34,635: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:34,636: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:34,636: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:34,637: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:34,643: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:34,648: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:34,653: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:34,654: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:34,654: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:34,655: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:34,660: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:34,665: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:34,673: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:34,674: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:34,674: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:34,675: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:34,682: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:34,688: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:34,696: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:34,697: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:34,697: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:34,699: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:34,704: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:34,710: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:34,718: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:34,719: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:34,719: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:34,720: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:34,727: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:34,733: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:34,741: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:34,741: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:34,742: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:34,744: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:34,750: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:34,758: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:34,766: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:34,767: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:34,768: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:34,769: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:34,776: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:34,780: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:34,785: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:34,786: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:34,786: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:34,788: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:34,795: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:34,801: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:34,809: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:34,810: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:34,810: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:34,812: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:34,819: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:34,824: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:34,831: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:34,831: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:34,832: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:34,833: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:34,839: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:34,843: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:34,850: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:34,851: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:34,851: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:34,852: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:34,856: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:34,861: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:34,867: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:34,869: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:34,869: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:34,870: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:34,875: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:34,881: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:34,889: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:34,890: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:34,890: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:34,891: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:34,896: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:34,901: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:34,907: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:34,907: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:34,907: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:34,908: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:34,914: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:34,918: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:34,925: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:34,926: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:34,926: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:34,927: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:34,933: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:34,940: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:34,949: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:34,950: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:34,950: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:34,952: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:34,961: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:34,965: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:34,974: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:34,975: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:34,976: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:34,977: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:34,985: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:34,993: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,000: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,001: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,001: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,002: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,010: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,015: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,023: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,023: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,024: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,025: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,031: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,036: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,044: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,045: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,045: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,046: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,051: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,057: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,065: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,065: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,066: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,067: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,075: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,079: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,085: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,087: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,088: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,090: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,097: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,101: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,110: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,111: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,112: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,112: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,118: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,125: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,131: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,131: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,132: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,133: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,142: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,148: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,157: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,159: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,160: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,161: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,168: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,174: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,182: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,182: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,183: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,184: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,193: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,201: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,210: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,211: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,211: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,212: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,220: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,227: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,234: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,234: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,235: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,236: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,243: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,248: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,253: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,254: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,254: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,255: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,263: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,268: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,277: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,278: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,278: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,280: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,287: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,291: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,300: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,301: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,301: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,302: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,312: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,317: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,324: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,326: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,327: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,328: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,335: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,340: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,349: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,349: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,350: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,351: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,356: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,363: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,370: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,370: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,371: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,372: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,381: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,385: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,392: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,393: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,394: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,395: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,403: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,407: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,415: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,415: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,415: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,416: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,422: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,427: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,433: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,434: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,434: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,435: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,440: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,445: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,451: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,452: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,452: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,453: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,459: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,464: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,470: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,470: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,470: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,471: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,478: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,482: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,488: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,489: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,490: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,492: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,498: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,502: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,508: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,509: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,510: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,511: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,516: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,520: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,528: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,529: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,529: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,530: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,536: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,541: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,549: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,549: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,549: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,551: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,558: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,564: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,569: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,570: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,570: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,571: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,578: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,582: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,588: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,588: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,589: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,590: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,596: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,600: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,605: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,606: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,606: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,608: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,615: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,619: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,624: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,625: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,626: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,627: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,634: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,637: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,645: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,646: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,647: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,647: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,652: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,656: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,664: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,664: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,664: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,665: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,670: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,675: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,682: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,682: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,682: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,683: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,688: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,695: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,700: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,701: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,702: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,703: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,710: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,714: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,720: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,720: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,720: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,721: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,729: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,733: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,739: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,739: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,739: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,741: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,748: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,751: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,757: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,758: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,759: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,761: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,767: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,771: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,779: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,779: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,780: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,781: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,785: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,789: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,797: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,798: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,798: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,799: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,804: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,811: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,816: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,817: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,817: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,818: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,824: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,830: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,835: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,836: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,836: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,837: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,844: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,848: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,854: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,854: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,854: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,855: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,862: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,865: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,871: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,871: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,872: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,873: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,881: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,885: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,890: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,892: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,893: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,895: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,900: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,905: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,913: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,913: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,913: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,914: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,920: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,924: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,931: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,932: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,932: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,933: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,938: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,944: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,950: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,952: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,952: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,953: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,961: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,965: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,971: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,971: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,972: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,974: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:35,982: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:35,986: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:35,993: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:35,994: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:35,994: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:35,996: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,001: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,006: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,014: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,015: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,015: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,016: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,021: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,026: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,033: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,034: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,034: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,035: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,040: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,047: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,052: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,052: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,053: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,054: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,061: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,065: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,070: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,071: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,071: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,072: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,080: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,084: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,090: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,091: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,092: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,093: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,099: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,103: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,111: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,111: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,111: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,112: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,118: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,121: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,130: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,131: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,131: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,132: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,139: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,147: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,152: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,153: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,153: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,154: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,163: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,169: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,178: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,179: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,180: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,181: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,188: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,195: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,202: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,203: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,203: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,205: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,212: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,216: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,222: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,223: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,223: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,225: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,233: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,238: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,246: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,247: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,247: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,248: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,254: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,259: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,267: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,267: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,268: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,269: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,276: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,284: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,295: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,296: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,296: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,298: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,308: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,317: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,329: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,331: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,333: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,334: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,345: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,353: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,363: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,365: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,365: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,367: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,377: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,381: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,388: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,389: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,390: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,392: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,398: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,403: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,413: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,413: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,414: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,415: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,423: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,428: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,433: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,433: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,434: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,435: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,442: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,446: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,452: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,452: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,453: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,456: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,462: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,466: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,474: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,474: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,475: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,476: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,481: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,485: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,493: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,493: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,494: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,495: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,500: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,504: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,511: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,511: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,512: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,513: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,519: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,525: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,530: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,531: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,531: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,532: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,539: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,544: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,549: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,550: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,550: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,551: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,558: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,562: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,567: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,568: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,568: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,569: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,576: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,580: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,586: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,586: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,587: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,588: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,594: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,598: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,603: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,604: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,604: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,605: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,612: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,616: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,621: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,622: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,623: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,625: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,632: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,636: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,642: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,643: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,643: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,644: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,649: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,653: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,658: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,659: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,660: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,661: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,667: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,670: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,678: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,679: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,679: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,681: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,686: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,689: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,697: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,697: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,698: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,699: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,704: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,708: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,715: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,715: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,716: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,717: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,721: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,725: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,732: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,733: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,733: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,735: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,739: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,745: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,751: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,752: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,753: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,753: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,761: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,766: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,772: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,772: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,773: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,774: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,781: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,784: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,790: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,790: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,791: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,793: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,799: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,803: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,809: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,811: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,811: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,812: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:24:36,817: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:24:36,821: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:24:36,829: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:24:36,830: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:24:36,830: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:24:36,831: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:25:28,824: INFO: nl_to_sql: query_engine was not NONE, setting it to NLSQLTableQueryEngine!!!:]
+[2024-12-30 16:25:29,455: INFO: sql_retriever: > Table desc str: Table 'Customer' has columns: CustomerId (INTEGER), Customer_FirstName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_LastName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_FatherName (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Gender (CHAR(1) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_DOB (DATE), Customer_ProfilePic (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_PhoneNo (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_PhoneNo1 (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_PhoneNo2 (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_WhatsAppNo (VARCHAR(15) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_PhoneNo_IsVerified (BIT), Customer_Email (VARCHAR(150) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Website (VARCHAR(250) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Religion (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Cast (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_MaritalStatus (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_IsActive (BIT), Customer_CreateOn (DATETIME), Customer_CreateBy (INTEGER), Customer_ModifyOn (DATETIME), Customer_ModifyBy (INTEGER), Customer_IsFirm (BIT), Customer_FirmType (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Date_Of_Incorruptions (DATE), Customer_NoOfPartner (INTEGER), Customer_NoofEmployee (INTEGER), Customer_GrossValue (NUMERIC(18, 0)), Customer_Nature_Of_Business (VARCHAR(500) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Relation (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Relation_FirstName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Relation_LastName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_Occupation (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Customer_CIN_Number (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS"), .
+
+Table 'LMS_Loan_Master' has columns: Loan_Id (INTEGER), Application_BranchId (INTEGER), Application_No (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS"), LoanAcNo (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_Status (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_InquiryNo (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_PrductId (INTEGER), Application_AssetCost (NUMERIC(18, 2)), Application_LoanAmount (NUMERIC(18, 2)), Application_LoanTenure (INTEGER), Application_LoanDuration_Month (INTEGER), Application_AdvInstl (INTEGER), Application_ManagementFee (NUMERIC(18, 2)), Application_DisbursementAmt (NUMERIC(18, 5)), Application_AgreementValue (NUMERIC(18, 5)), Application_InterestAmt (NUMERIC(18, 5)), Application_LTV (NUMERIC(18, 5)), Application_LoanEMIAmount (NUMERIC(18, 5)), Application_EMIType (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_LoanIRRate (NUMERIC(18, 10)), Application_IRR_Type (VARCHAR(10) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_IRR_CalculateBy (VARCHAR(20) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_Case_IRR (NUMERIC(18, 10)), Application_Disbursement_IRR (NUMERIC(18, 10)), Application_Loan_SchemeId (INTEGER), Application_LoanPurpose (VARCHAR(150) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_CreateOn (DATETIME), Application_CreateBy (INTEGER), Application_ApprovedLoanAmount (NUMERIC(18, 2)), Application_ApprovedLoanDouration_Month (INTEGER), Application_CreditApprovalNote (VARCHAR COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_ApproveDate (DATETIME), Application_TotalDeduction (NUMERIC(18, 2)), Application_Account_CustomerId (INTEGER), Application_ChequeAmount (NUMERIC(18, 2)), Application_ChequeNo (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_IRRate (NUMERIC(18, 10)), Application_BankName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_BankBranch (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_IFSCCode (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_AccountNo (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_AccountHolderName (VARCHAR(50) COLLATE "SQL_Latin1_General_CP1_CI_AS"), Application_ChqueDate (DATE), Application_EMIAmount (NUMERIC(18, 2)), Application_EMIMonthDay (INTEGER), Application_FirstEMIDate (DATE), Application_ExpiryDate (DATE), Application_ModifyBy (INTEGER), Application_ModifyOn (DATETIME), Loan_Date (DATETIME), IsActive (INTEGER), LoanAccountingId (INTEGER), LoanCreatedBy (INTEGER), SourceType (VARCHAR(100) COLLATE "SQL_Latin1_General_CP1_CI_AS"), BranchHead (INTEGER), LeadSourceName (INTEGER), CollectionArea (INTEGER), SalesExecutive (INTEGER), CollectionSubarea (INTEGER), SourceArea (INTEGER), CollectionExecutive (INTEGER), LeadReference (VARCHAR(200) COLLATE "SQL_Latin1_General_CP1_CI_AS"), IsLoanInfo (INTEGER), IsCustomerInfo (INTEGER), IsAccountInfo (INTEGER), IsAssetInfo (INTEGER), IsCrcInfo (INTEGER), IsFiTvrInfo (INTEGER), IsChequeDetailInfo (INTEGER), IsInsuranceInfo (INTEGER), IsRepaymentScheduleInfo (INTEGER), IsDvReportInfo (INTEGER), IsAmortizationInfos (INTEGER), IsNoteRecommendation (INTEGER), IsAttachment (INTEGER), IsLoanNo (INTEGER), LOS_ApplicationId (INTEGER), LoanCreatedOn (DATETIME), LoanClosed_Date (DATETIME), LoanClosed_By (INTEGER), SuitFiled (INTEGER), WriteOff_Settled_Status (INTEGER), Financial_CreatedBy (INTEGER), Financial_CreatedOn (DATETIME), Financial_ModifyBy (INTEGER), Financial_ModifyOn (DATETIME), .:]
+[2024-12-30 16:25:35,691: INFO: nl_to_sql: Query engine working fine!!!:]
+[2024-12-30 16:25:35,691: INFO: nl_to_sql: 
+
+
+ Response: | Loan_Id | Application_No | Application_LoanAmount |
+|---|---|---|
+| 1 | 100001 | 600000 |
+| 2 | 100002 | 700000 |
+| 3 | 100003 | 800000 |
+
+
+:]
+[2024-12-30 16:25:35,692: INFO: nl_to_sql: 
+
+
+ SQL Query generated: SELECT
+  Loan_Id,
+  Application_No,
+  Application_LoanAmount
+FROM LMS_Loan_Master
+WHERE
+  Application_LoanAmount > 500000;
+
+
+:]
+[2024-12-30 16:25:35,692: INFO: main: 
+
+ SQL Query generated: SELECT
+  Loan_Id,
+  Application_No,
+  Application_LoanAmount
+FROM LMS_Loan_Master
+WHERE
+  Application_LoanAmount > 500000;
+
+:]
+[2024-12-30 16:25:35,745: INFO: preprocess: 
+
+
+ Columns removed: ['Loan_Id']
+
+
+:]
+[2024-12-30 16:25:35,750: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:25:35,756: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:25:35,757: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:25:35,757: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:25:35,758: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:25:35,762: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:25:35] "GET /load_data?query=show%20me%20loans%20above%20500000 HTTP/1.1" 200 -:]
+[2024-12-30 16:26:40,721: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:26:40] "GET /chat HTTP/1.1" 200 -:]
+[2024-12-30 16:26:59,398: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:26:59] "GET /static/css/style.css HTTP/1.1" 200 -:]
+[2024-12-30 16:28:00,322: INFO: _internal:  * Detected change in '/home/tanay/db_reader2/main.py', reloading:]
+[2024-12-30 16:28:04,320: INFO: _internal:  * Restarting with stat:]
+[2024-12-30 16:28:14,044: INFO: connection: Connection established:]
+[2024-12-30 16:28:14,084: INFO: config: setting config embed:]
+[2024-12-30 16:28:14,086: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2:]
+[2024-12-30 16:28:18,495: INFO: SentenceTransformer: 2 prompts are loaded, with the keys: ['query', 'text']:]
+[2024-12-30 16:28:18,496: INFO: config: setting config llm:]
+[2024-12-30 16:28:19,528: INFO: config: embed_model was not NONE, setting it to HuggingFaceEmbedding!!!:]
+[2024-12-30 16:28:19,529: INFO: config: llm was not NONE, setting it to self.setting_config.llm!!!:]
+[2024-12-30 16:28:19,529: INFO: config: embed_model was not NONE, setting it to HuggingFaceEmbedding!!!:]
+[2024-12-30 16:28:19,529: INFO: config: llm was not NONE, setting it to self.setting_config.llm!!!:]
+[2024-12-30 16:28:20,112: INFO: connection: Connection established:]
+[2024-12-30 16:28:21,203: INFO: connection: Connection established:]
+[2024-12-30 16:28:21,237: INFO: config: setting config embed:]
+[2024-12-30 16:28:21,238: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2:]
+[2024-12-30 16:28:24,429: INFO: SentenceTransformer: 2 prompts are loaded, with the keys: ['query', 'text']:]
+[2024-12-30 16:28:24,429: INFO: config: setting config llm:]
+[2024-12-30 16:28:26,283: WARNING: _internal:  * Debugger is active!:]
+[2024-12-30 16:28:26,284: INFO: _internal:  * Debugger PIN: 111-846-815:]
+[2024-12-30 16:28:26,430: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:28:26] "GET /chat HTTP/1.1" 200 -:]
+[2024-12-30 16:28:26,487: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:28:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -:]
+[2024-12-30 16:28:26,490: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:28:26] "[36mGET /static/index.js HTTP/1.1[0m" 304 -:]
+[2024-12-30 16:28:40,203: INFO: preprocess: 
+
+
+ Columns removed: ['CustomerId', 'Customer_PhoneNo_IsVerified', 'Customer_IsActive', 'Customer_CreateOn', 'Customer_CreateBy', 'Customer_ModifyOn', 'Customer_ModifyBy', 'Customer_IsFirm']
+
+
+:]
+[2024-12-30 16:28:40,217: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:28:40,234: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:28:40,235: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:28:40,235: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:28:40,243: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:28:40,257: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:28:40] "GET /load_data?query=select%20top%2020%20*%20from%20Customer HTTP/1.1" 200 -:]
+[2024-12-30 16:29:10,923: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:29:10,927: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:29:10,935: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:29:10,936: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:29:10,936: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:29:10,937: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:29:10,941: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:29:10] "GET /load_data?query=select%20top%2020%20Customer_FirstName,Customer_LastName%20from%20Customer HTTP/1.1" 200 -:]
+[2024-12-30 16:30:15,395: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:30:15,399: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:30:15,405: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:30:15,405: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:30:15,405: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:30:15,406: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:30:15,409: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:30:15] "GET /load_data?query=select%20top%2020%20Customer_FirstName,Customer_LastName%20from%20Customer HTTP/1.1" 200 -:]
+[2024-12-30 16:31:06,790: INFO: preprocess: 
+
+
+ Columns removed: []
+
+
+:]
+[2024-12-30 16:31:06,794: INFO: fallback: fallback_attr: name=pandas.notna reason=obj is not DataFrame or Series :]
+[2024-12-30 16:31:06,800: INFO: fallback: fallback_attr: name=DataFrame.dtype reason=DataFrame.__getattr__ for dtype is called :]
+[2024-12-30 16:31:06,801: INFO: fallback: fallback_attr: name=DataFrame.__array_struct__ reason=DataFrame.__getattr__ for __array_struct__ is called :]
+[2024-12-30 16:31:06,801: INFO: fallback: fallback_attr: name=DataFrame.__array_interface__ reason=DataFrame.__getattr__ for __array_interface__ is called :]
+[2024-12-30 16:31:06,802: INFO: fallback: fallback_attr: name=DataFrame.to_numpy reason=to_numpy with non-numeric column :]
+[2024-12-30 16:31:06,805: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:31:06] "GET /load_data?query=select%20top%2020%20Customer_FirstName,Customer_LastName%20from%20Customer HTTP/1.1" 200 -:]
+[2024-12-30 16:37:21,414: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:37:21] "GET /chat HTTP/1.1" 200 -:]
+[2024-12-30 16:37:21,522: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:37:21] "GET /static/css/style.css HTTP/1.1" 200 -:]
+[2024-12-30 16:37:21,526: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:37:21] "[36mGET /static/index.js HTTP/1.1[0m" 304 -:]
+[2024-12-30 16:37:49,753: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:37:49] "GET /chat HTTP/1.1" 200 -:]
+[2024-12-30 16:37:49,828: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:37:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -:]
+[2024-12-30 16:37:49,832: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:37:49] "[36mGET /static/index.js HTTP/1.1[0m" 304 -:]
+[2024-12-30 16:37:53,498: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:37:53] "GET /chat HTTP/1.1" 200 -:]
+[2024-12-30 16:37:53,594: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:37:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -:]
+[2024-12-30 16:37:53,595: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:37:53] "[36mGET /static/index.js HTTP/1.1[0m" 304 -:]
+[2024-12-30 16:38:35,085: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:38:35] "GET /chat HTTP/1.1" 200 -:]
+[2024-12-30 16:38:35,158: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:38:35] "[36mGET /static/index.js HTTP/1.1[0m" 304 -:]
+[2024-12-30 16:38:35,160: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:38:35] "GET /static/css/style.css HTTP/1.1" 200 -:]
+[2024-12-30 16:38:45,775: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:38:45] "GET /chat HTTP/1.1" 200 -:]
+[2024-12-30 16:38:45,856: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:38:45] "GET /static/css/style.css HTTP/1.1" 200 -:]
+[2024-12-30 16:38:45,861: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:38:45] "[36mGET /static/index.js HTTP/1.1[0m" 304 -:]
+[2024-12-30 16:38:51,277: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:38:51] "GET /chat HTTP/1.1" 200 -:]
+[2024-12-30 16:38:51,384: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:38:51] "GET /static/css/style.css HTTP/1.1" 200 -:]
+[2024-12-30 16:38:51,388: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:38:51] "[36mGET /static/index.js HTTP/1.1[0m" 304 -:]
+[2024-12-30 16:39:04,106: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:39:04] "GET /chat HTTP/1.1" 200 -:]
+[2024-12-30 16:39:04,175: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:39:04] "GET /static/css/style.css HTTP/1.1" 200 -:]
+[2024-12-30 16:39:04,180: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:39:04] "[36mGET /static/index.js HTTP/1.1[0m" 304 -:]
+[2024-12-30 16:39:05,763: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:39:05] "GET /chat HTTP/1.1" 200 -:]
+[2024-12-30 16:39:05,868: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:39:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -:]
+[2024-12-30 16:39:05,874: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:39:05] "[36mGET /static/index.js HTTP/1.1[0m" 304 -:]
+[2024-12-30 16:39:14,555: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:39:14] "GET /chat HTTP/1.1" 200 -:]
+[2024-12-30 16:39:14,624: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:39:14] "GET /static/css/style.css HTTP/1.1" 200 -:]
+[2024-12-30 16:39:14,627: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:39:14] "[36mGET /static/index.js HTTP/1.1[0m" 304 -:]
+[2024-12-30 16:39:16,493: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:39:16] "[33mGET /configuration.html HTTP/1.1[0m" 404 -:]
+[2024-12-30 16:41:54,522: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:41:54] "GET /try HTTP/1.1" 200 -:]
+[2024-12-30 16:42:29,499: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:42:29] "[33mGET /configuration.html HTTP/1.1[0m" 404 -:]
+[2024-12-30 16:42:34,765: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:42:34] "GET /chat HTTP/1.1" 200 -:]
+[2024-12-30 16:42:34,785: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:42:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -:]
+[2024-12-30 16:42:34,786: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:42:34] "[36mGET /static/index.js HTTP/1.1[0m" 304 -:]
+[2024-12-30 16:42:36,154: INFO: _internal: 127.0.0.1 - - [30/Dec/2024 16:42:36] "GET /try HTTP/1.1" 200 -:]
+[2025-01-03 09:39:40,191: INFO: connection: Connection established:]
+[2025-01-03 09:39:40,380: INFO: config: setting config embed:]
+[2025-01-03 09:39:40,392: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2:]
+[2025-01-03 09:39:46,996: INFO: SentenceTransformer: 2 prompts are loaded, with the keys: ['query', 'text']:]
+[2025-01-03 09:39:46,997: INFO: config: setting config llm:]
+[2025-01-03 09:39:54,224: INFO: config: embed_model was not NONE, setting it to HuggingFaceEmbedding!!!:]
+[2025-01-03 09:39:54,224: INFO: config: llm was not NONE, setting it to self.setting_config.llm!!!:]
+[2025-01-03 09:39:54,225: INFO: config: embed_model was not NONE, setting it to HuggingFaceEmbedding!!!:]
+[2025-01-03 09:39:54,225: INFO: config: llm was not NONE, setting it to self.setting_config.llm!!!:]
+[2025-01-03 09:39:58,960: INFO: connection: Connection established:]
+[2025-01-03 09:40:08,800: INFO: connection: Connection established:]
+[2025-01-03 09:40:09,212: INFO: config: setting config embed:]
+[2025-01-03 09:40:09,214: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2:]
+[2025-01-03 09:40:13,322: INFO: SentenceTransformer: 2 prompts are loaded, with the keys: ['query', 'text']:]
+[2025-01-03 09:40:13,322: INFO: config: setting config llm:]
+[2025-01-03 09:40:16,043: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000:]
+[2025-01-03 09:40:16,044: INFO: _internal: [33mPress CTRL+C to quit[0m:]
+[2025-01-03 09:40:16,046: INFO: _internal:  * Restarting with stat:]
+[2025-01-03 09:40:29,826: INFO: connection: Connection established:]
+[2025-01-03 09:40:30,235: INFO: config: setting config embed:]
+[2025-01-03 09:40:30,237: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2:]
+[2025-01-03 09:40:37,198: INFO: SentenceTransformer: 2 prompts are loaded, with the keys: ['query', 'text']:]
+[2025-01-03 09:40:37,198: INFO: config: setting config llm:]
+[2025-01-03 09:40:40,528: INFO: config: embed_model was not NONE, setting it to HuggingFaceEmbedding!!!:]
+[2025-01-03 09:40:40,529: INFO: config: llm was not NONE, setting it to self.setting_config.llm!!!:]
+[2025-01-03 09:40:40,529: INFO: config: embed_model was not NONE, setting it to HuggingFaceEmbedding!!!:]
+[2025-01-03 09:40:40,529: INFO: config: llm was not NONE, setting it to self.setting_config.llm!!!:]
+[2025-01-03 09:42:28,134: INFO: connection: Connection established:]
+[2025-01-03 09:42:28,440: INFO: config: setting config embed:]
+[2025-01-03 09:42:28,442: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2:]
+[2025-01-03 09:42:41,036: INFO: SentenceTransformer: 2 prompts are loaded, with the keys: ['query', 'text']:]
+[2025-01-03 09:42:41,037: INFO: config: setting config llm:]
+[2025-01-03 09:42:49,009: INFO: config: embed_model was not NONE, setting it to HuggingFaceEmbedding!!!:]
+[2025-01-03 09:42:49,009: INFO: config: llm was not NONE, setting it to self.setting_config.llm!!!:]
+[2025-01-03 09:42:49,010: INFO: config: embed_model was not NONE, setting it to HuggingFaceEmbedding!!!:]
+[2025-01-03 09:42:49,010: INFO: config: llm was not NONE, setting it to self.setting_config.llm!!!:]
+[2025-01-03 09:42:53,099: INFO: connection: Connection established:]
+[2025-01-03 09:43:10,294: INFO: connection: Connection established:]
+[2025-01-03 09:43:10,703: INFO: config: setting config embed:]
+[2025-01-03 09:43:10,704: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2:]
+[2025-01-03 09:43:28,933: INFO: SentenceTransformer: 2 prompts are loaded, with the keys: ['query', 'text']:]
+[2025-01-03 09:43:28,933: INFO: config: setting config llm:]
+[2025-01-03 09:43:34,643: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000:]
+[2025-01-03 09:43:34,643: INFO: _internal: [33mPress CTRL+C to quit[0m:]
+[2025-01-03 09:43:34,645: INFO: _internal:  * Restarting with stat:]
+[2025-01-03 09:43:51,071: INFO: connection: Connection established:]
+[2025-01-03 09:43:52,370: INFO: config: setting config embed:]
+[2025-01-03 09:43:52,371: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2:]
+[2025-01-03 09:44:02,430: INFO: SentenceTransformer: 2 prompts are loaded, with the keys: ['query', 'text']:]
+[2025-01-03 09:44:02,430: INFO: config: setting config llm:]
+[2025-01-03 09:44:04,992: INFO: config: embed_model was not NONE, setting it to HuggingFaceEmbedding!!!:]
+[2025-01-03 09:44:04,993: INFO: config: llm was not NONE, setting it to self.setting_config.llm!!!:]
+[2025-01-03 09:44:04,993: INFO: config: embed_model was not NONE, setting it to HuggingFaceEmbedding!!!:]
+[2025-01-03 09:44:04,993: INFO: config: llm was not NONE, setting it to self.setting_config.llm!!!:]
+[2025-01-03 09:44:10,282: INFO: connection: Connection established:]
+[2025-01-03 09:44:25,956: INFO: connection: Connection established:]
+[2025-01-03 09:44:26,777: INFO: config: setting config embed:]
+[2025-01-03 09:44:26,779: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2:]
+[2025-01-03 09:44:32,433: INFO: SentenceTransformer: 2 prompts are loaded, with the keys: ['query', 'text']:]
+[2025-01-03 09:44:32,433: INFO: config: setting config llm:]
+[2025-01-03 09:44:35,212: WARNING: _internal:  * Debugger is active!:]
+[2025-01-03 09:44:35,384: INFO: _internal:  * Debugger PIN: 230-315-415:]
