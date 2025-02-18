@@ -128,3 +128,20 @@
         Distributed Systems: Use a service like Redis or RabbitMQ for managing shared states or tasks.
 
     This architecture ensures high performance, maintainability, and scalability for your Flask application.
+
+
+
+
+    SELECT
+  Customer.Customer_FirstName,
+  Customer.Customer_LastName,
+  LMS_Loan_Master.Application_LoanAmount,
+  LMS_Loan_Master.Application_InterestAmt,
+  Acc_Voucher_Details.Amount
+FROM Customer
+JOIN LMS_Loan_Master
+  ON Customer.CustomerId = LMS_Loan_Master.Application_Account_CustomerId
+JOIN Acc_Voucher_Details
+  ON Customer.CustomerId = Acc_Voucher_Details.CustomerId
+WHERE
+  LMS_Loan_Master.Application_LoanAmount > 500000;

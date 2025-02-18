@@ -1,6 +1,6 @@
 import logging, os, sys
 
-logging_str = "[%(asctime)s: %(levelname)s: %(module)s: %(message)s:]"
+logging_str = "[%(asctime)s: %(levelname)s: %(module)s: %(filename)s: %(lineno)d: %(message)s:]"
 
 log_dir = "logs"
 

@@ -1,216 +1,175 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/* body {
-    font-family: Arial, sans-serif;
-    max-width: 1200px;
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-} */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    text-decoration: none;
-    list-style: none;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Poppins", sans-serif;
+   text-decoration: none;
+   list-style: none;
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #212121;
-    overflow-x: scroll;
-    background: linear-gradient(90deg, #e2e2e2, #c9d6ff);
-
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background: linear-gradient(90deg, #e2e2e2, #c9d6ff);
+   overflow-x: hidden;
 }
 
 .logo {
-    font-family: 'Major Mono Display';
-    font-size: 3rem;
-    position: absolute;
-    top: 5;
-    left: 5;
-    background-color: transparent;
+   font-family: 'Major Mono Display';
+   font-size: 3rem;
+   position: absolute;
+   top: 5;
+   left: 5;
+   background-color: transparent;
 }
 
-.config{
-    position: absolute;
-    top: 5;
-    left: 5;
-    background-color: transparent;
-    z-index: 3;
-}
-
-.q_table,
-.pagination {
-    display: none;
-    /* Hide initially */
-}
-
-#loadingIndicator {
-    display: none;
-    /* Hide initially */
+.config {
+   position: absolute;
+   top: 5;
+   left: 5;
+   background-color: transparent;
+   z-index: 3;
 }
 
 .q_table {
-    width: 50%;
-    height: 30rem;
-    overflow-x: scroll;
-    overflow-y: scroll;
+   width: 70%;
+   max-height: 25rem;
+   overflow: auto;
+   background: white;
+   border-radius: 10px;
+   box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.q_table::-webkit-scrollbar {
+   width: 6px;
+   height: 6px;
+}
+
+.q_table::-webkit-scrollbar-track {
+   background: #f1f1f1;
+}
+
+.q_table::-webkit-scrollbar-thumb {
+   background: #888;
+   border-radius: 3px;
 }
 
 #dataTable {
-    /* border: 2px solid #212121; */
-    width: 50%;
-    height: 30rem;
-    z-index: 3;
-    border-collapse: collapse;
-    background-color: #ffffffde;
-    /* border-radius: 2rem; */
-
-}
-
-#dataTable th,
-#dataTable td {
-    /* border: 1px solid #000000; */
-    text-align: center;
-    color: #555555;
+   width: 100%;
+   border-collapse: separate;
+   border-spacing: 0;
 }
 
 #dataTable th {
-    background-color: #fff;
-    font-weight: 500;
-    padding: 20px;
-    font-family: "Poppins";
-    border-bottom: 1px solid black;
-    color: #212121;
-}
-
-#dataTable tr {
-    padding: 20px;
-    border: none;
-    /* border-bottom: 2px solid #000; */
-}
-
-#dataTable tr:hover {
-    background-color: #f3f2f2;
-    /* border: 1px solid #000; */
-    color: #2a3338;
+   position: sticky;
+   top: 0;
+   background: white;
+   padding: 20px;
+   font-weight: 500;
+   color: #2c3e50;
+   text-align: left;
+   border-bottom: 2px solid #edf2f7;
+   min-width: 150px;
+   white-space: nowrap;
 }
 
 #dataTable td {
-    padding: 20px;
-    border-bottom: 1px solid black;
+   padding: 16px 20px;
+   color: #4a5568;
+   border-bottom: 1px solid #edf2f7;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
 }
 
+#dataTable tr:hover {
+   background: #f8fafc;
+}
 
 .pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-top: 15px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   margin: 20px 0;
 }
 
 .pagination button {
-    padding: 5px 10px;
-    cursor: pointer;
-    font-family: "Poppins";
+   padding: 8px 16px;
+   border: 1px solid #e2e8f0;
+   border-radius: 6px;
+   background: white;
+   color: #4a5568;
+   cursor: pointer;
+   transition: all 0.2s;
+}
 
+.pagination button:disabled {
+   opacity: 0.5;
+   cursor: not-allowed;
+}
+
+.pagination button:not(:disabled):hover {
+   background: #f7fafc;
+   border-color: #cbd5e0;
 }
 
 #pageInfo {
-    color: #000;
-    font-size: 1.2rem;
-    /* margin-top: 10px; */
+   color: #4a5568;
+   font-size: 0.95rem;
 }
 
 #loadingIndicator {
-    text-align: center;
-    margin-top: 20px;
-    font-style: italic;
+   color: #4a5568;
+   text-align: center;
+   margin: 20px 0;
 }
 
 #errorMessage {
-    color: red;
-    text-align: center;
-    margin-top: 20px;
+   color: #e53e3e;
+   text-align: center;
+   margin: 10px 0;
 }
 
-
-/* Styling for the query input container */
 .query_input {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    /* Center items horizontally */
-    align-items: end;
-    /* Center items vertically */
-    gap: 10px;
-    /* Space between input and button */
-    margin-top: 20px;
-    /* Space from the top */
+   width: 80%;
+   display: flex;
+   gap: 10px;
+   margin: 20px 0;
 }
 
-
-/* Styling for the input field */
 #queryInput {
-
-    width: 100%;
-    padding: 10px;
-    /* Add some padding inside the input */
-    font-size: 16px;
-    /* Set font size */
-    border: 2px solid #ccc;
-    /* Border with light grey color */
-    border-radius: 25px;
-    /* Rounded corners */
-    outline: none;
-    /* Remove the outline on focus */
-    transition: border-color 0.3s;
-    /* Smooth transition on focus */
+   flex: 1;
+   padding: 12px 16px;
+   border: 1px solid #e2e8f0;
+   border-radius: 8px;
+   font-size: 0.95rem;
+   resize: vertical;
+   min-height: 45px;
 }
 
-/* Add focus effect on input */
 #queryInput:focus {
-    border-color: #007BFF;
-    /* Change border color when focused */
+   outline: none;
+   border-color: #4299e1;
+   box-shadow: 0 0 0 3px rgba(66,153,225,0.1);
 }
 
-/* Styling for the button */
 #queryButton {
-    padding: 10px 20px;
-    /* Vertical and horizontal padding */
-    font-size: 16px;
-    /* Font size */
-    background-color: #007BFF;
-    /* Blue background color */
-    color: white;
-    /* White text color */
-    border: none;
-    /* Remove border */
-    border-radius: 5px;
-    /* Rounded corners */
-    cursor: pointer;
-    /* Change cursor to pointer on hover */
-    transition: background-color 0.3s;
-    /* Smooth background color transition */
+   padding: 0 24px;
+   background: #4299e1;
+   color: white;
+   border: none;
+   border-radius: 8px;
+   font-weight: 500;
+   cursor: pointer;
+   transition: background 0.2s;
 }
 
-/* Button hover effect */
 #queryButton:hover {
-    background-color: #0056b3;
-    /* Darker blue background when hovered */
-}
-
-/* Button focus effect */
-#queryButton:focus {
-    outline: none;
-    /* Remove outline when focused */
+   background: #3182ce;
 }

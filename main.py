@@ -22,20 +22,23 @@ def login():
 
 @app.route("/chat", methods=["GET", 'POST'])
 def chat(): 
-    query_engine = queryEngine.get_query_engine()
     return render_template('home_page.html')
 
 
 @app.route('/load_data')
 def load_data():
-    # query = request.args.get('query', None)
-    query = request.args.get('query', None)
+    
+    # for directly running the query
+    # sql_query = request.args.get('query', None)
 
-    # sql_query = queryEngine.generate_sql_query(query)
-    # logging.info(f"\n\n SQL Query generated: {sql_query}\n\n")
+    # for natural language query
+    sql_query = request.args.get('query', None)
+    temp_sql_query = sql_query
+    sql_query = queryEngine.generate_sql_query(temp_sql_query)
+    logging.info(f"\n\n SQL Query generated: {sql_query}\n\n")
     
     
-    if not query:
+    if not sql_query:
         def generate():
             yield json.dumps({"error": "No query submitted"}) + '\n'
         return Response(generate(), mimetype='application/json')
@@ -48,7 +51,7 @@ def load_data():
             chunk_size = CHUNK_SIZE
             total_rows_processed = 0
             
-            for chunk in pd.read_sql(query, engine, chunksize=chunk_size):
+            for chunk in pd.read_sql(sql_query, engine, chunksize=chunk_size):
                 for col in chunk.columns:
                     if chunk[col].dtype == 'datetime64[ns]':
                         chunk[col] = chunk[col].dt.strftime('%Y-%m-%d %H:%M:%S')
@@ -74,6 +77,7 @@ def load_data():
                     }) + '\n'
                 
                 print("="*60)
+                print(f"SQL Query :-: {sql_query}")
                 print(f"Chunk Size :-: {sys.getsizeof(chunk)}")
                 print(f"TOTAL ROWS SENT :-: {total_rows_processed}")
                 print(f"time taken :-: {time.time() - start_time}")

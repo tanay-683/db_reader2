@@ -12,7 +12,7 @@ print("part2")
 embed_model, llm = setting_config_manager.initialize_settings_config(settings)
 print("part3")
 
-TABLES = ["Customer", "LMS_Loan_Master"]
+TABLES = ["Customer", "LMS_Loan_Master", "Acc_Voucher_Details"]
 sql_database = sql_connection.get_sql_database(tables=TABLES)
 
 class QueryEngine:
