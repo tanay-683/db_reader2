@@ -1,5 +1,6 @@
 import logging
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
+from llama_index.embeddings.gemini import GeminiEmbedding
 import llama_index.core.llms
 from dataclasses import dataclass, field
 from typing import Optional
@@ -8,6 +9,7 @@ from db_reader.model.model import get_gemini_model, get_ollama_model
 from db_reader.sql_connection.connection import SqlConnection
 from ensure import ensure_annotations
 from typing import Tuple, Union
+import os
 
 
 CHUNK_SIZE = 20
@@ -21,7 +23,10 @@ engine = sql_connection.get_engine()
 
 @dataclass
 class SettingConfig:
-    embed_model: Optional[HuggingFaceEmbedding] = field(default_factory=lambda: HuggingFaceEmbedding(model_name="sentence-transformers/all-mpnet-base-v2"))
+    model_name = "models/embedding-001"
+    embed_model = GeminiEmbedding(model_name=model_name, api_key=os.getenv("GOOGLE_API_KEY"))
+    
+    embed_model: Optional[GeminiEmbedding] = field(default_factory=lambda: GeminiEmbedding(model_name="models/embedding-001", api_key=os.getenv("GOOGLE_API_KEY")))
     llm: Optional[llama_index.core.llms.LLM] = field(default_factory=get_gemini_model)
 
     def __post_init__(self):

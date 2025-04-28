@@ -8,7 +8,6 @@ dependencies = [
     "ruff>=0.8.0",
     "pandas",
     "fireducks",
-    "langchain",
     "langchain-community",
     "langchain-experimental",
     "pymssql",
@@ -27,4 +26,7 @@ dependencies = [
     "llama-index-embeddings-huggingface>=0.4.0",
     "llama-index-llms-gemini>=0.4.2",
     "jsonpath-ng>=1.7.0",
+    "pyproject-toml==0.1.0",
+    "pyfiglet>=1.0.2",
+    "llama-index-embeddings-gemini>=0.3.2",
 ]

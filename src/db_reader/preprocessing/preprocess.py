@@ -5,7 +5,6 @@ import datetime
 from ensure import ensure_annotations
 
 
-
 class ChunkCleaningPipeline:
     def __init__(self, chunk:pd.DataFrame):
         self.chunk = chunk

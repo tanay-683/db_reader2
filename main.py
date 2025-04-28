@@ -60,29 +60,30 @@ def load_data():
                         
                 chunk = InitiateChunkCleaningPipeline(chunk).get_cleaned_chunk()
                 
-                
-                total_rows_processed += len(chunk)
-                
-                if not has_columns_sent:
-                    yield json.dumps({
-                        'rows': chunk,
-                        'columns': pd.DataFrame(chunk).columns.tolist(),
-                        'total_processed': total_rows_processed
-                    }) + '\n'
-                    has_columns_sent = True
-                else:
-                    yield json.dumps({
-                        'rows': chunk,
-                        'total_processed': total_rows_processed
-                    }) + '\n'
-                
-                print("="*60)
-                print(f"SQL Query :-: {sql_query}")
-                print(f"Chunk Size :-: {sys.getsizeof(chunk)}")
-                print(f"TOTAL ROWS SENT :-: {total_rows_processed}")
-                print(f"time taken :-: {time.time() - start_time}")
-                print("="*60)
-        
+                if total_rows_processed < 100:
+                    total_rows_processed += len(chunk)
+                    
+                    if not has_columns_sent:
+                        yield json.dumps({
+                            'rows': chunk,
+                            'columns': pd.DataFrame(chunk).columns.tolist(),
+                            'total_processed': total_rows_processed
+                        }) + '\n'
+                        has_columns_sent = True
+                    else:
+                        yield json.dumps({
+                            'rows': chunk,
+                            'total_processed': total_rows_processed
+                        }) + '\n'
+                    
+                    print("="*60)
+                    print(f"User Query :-: {temp_sql_query}")
+                    print(f"SQL Query :-: {sql_query}")
+                    print(f"Chunk Size :-: {sys.getsizeof(chunk)}")
+                    print(f"TOTAL ROWS SENT :-: {total_rows_processed}")
+                    print(f"time taken :-: {time.time() - start_time}")
+                    print("="*60)
+                    
         except Exception as e:
             logging.error(f"Error in data generation: {e}")
             yield json.dumps({"error": str(e)}) + '\n'

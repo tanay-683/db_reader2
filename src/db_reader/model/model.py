@@ -5,7 +5,7 @@ from llama_index.llms.ollama import Ollama
 
 def get_gemini_model():
     gemini_llm = Gemini(
-    model=f"models/gemini-pro",
+    model=f"models/gemini-1.5-flash",
     api_key=os.getenv("GOOGLE_API_KEY"),
     )
     return gemini_llm

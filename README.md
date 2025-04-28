@@ -145,3 +145,5 @@ JOIN Acc_Voucher_Details
   ON Customer.CustomerId = Acc_Voucher_Details.CustomerId
 WHERE
   LMS_Loan_Master.Application_LoanAmount > 500000;
+
+  # save model
