@@ -1,0 +1,7 @@
+services:
+  db_reader_server:
+    image: db_reader2_updated
+    env_file:
+      - ./db_reader.env
+    ports:
+      - "5000:5000"
